@@ -907,7 +907,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5714713691505991489, guid: 9eff0567b85fa4e148ef1fbe23413b5d, type: 3}
+  m_Sprite: {fileID: -1146525703440253779, guid: 3c4193bb0af7c4900976cca8a6024be7, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2577,7 +2577,7 @@ MonoBehaviour:
   p1NameText: {fileID: 1134834672}
   p2NameText: {fileID: 1555771730}
   continueButtonText: {fileID: 1361760564}
-  defaultPreview: {fileID: 5714713691505991489, guid: 9eff0567b85fa4e148ef1fbe23413b5d, type: 3}
+  defaultPreview: {fileID: -1146525703440253779, guid: 3c4193bb0af7c4900976cca8a6024be7, type: 3}
   fireFull: {fileID: -3903418514567901084, guid: 1a987c87f99e5435082f56c632f0011d, type: 3}
   iceFull: {fileID: -1747654194956157104, guid: 9ae5879db97184b53a8078f5e654f495, type: 3}
   airFull: {fileID: -8681652566589229495, guid: 2cb714a7902e944af93b6b981dc951a4, type: 3}
@@ -3306,7 +3306,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5714713691505991489, guid: 9eff0567b85fa4e148ef1fbe23413b5d, type: 3}
+  m_Sprite: {fileID: -1146525703440253779, guid: 3c4193bb0af7c4900976cca8a6024be7, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

@@ -1,0 +1,3757 @@
+fileFormatVersion: 2
+guid: b44ce278d1ecd7241a39cede19fbed75
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2943838307677813157
+    second: Air Anims Final Sheet_0
+  - first:
+      213: -7127458372929761640
+    second: Air Anims Final Sheet_1
+  - first:
+      213: 8254221200085656827
+    second: Air Anims Final Sheet_2
+  - first:
+      213: 6080284786855761758
+    second: Air Anims Final Sheet_3
+  - first:
+      213: -7673806960071066147
+    second: Air Anims Final Sheet_4
+  - first:
+      213: 2259776176100455382
+    second: Air Anims Final Sheet_5
+  - first:
+      213: -3298638481343224877
+    second: Air Anims Final Sheet_6
+  - first:
+      213: -4582818404336773593
+    second: Air Anims Final Sheet_7
+  - first:
+      213: 5592247317869734937
+    second: Air Anims Final Sheet_8
+  - first:
+      213: -6285391237032754125
+    second: Air Anims Final Sheet_9
+  - first:
+      213: -6187621009397413734
+    second: Air Anims Final Sheet_10
+  - first:
+      213: 2001484201483422933
+    second: Air Anims Final Sheet_11
+  - first:
+      213: -8100620053519872932
+    second: Air Anims Final Sheet_12
+  - first:
+      213: -1843760960594455714
+    second: Air Anims Final Sheet_13
+  - first:
+      213: -1614678868434220720
+    second: Air Anims Final Sheet_14
+  - first:
+      213: -3051333591150981624
+    second: Air Anims Final Sheet_15
+  - first:
+      213: 5758761401329698685
+    second: Air Anims Final Sheet_16
+  - first:
+      213: -3861430892628219741
+    second: Air Anims Final Sheet_17
+  - first:
+      213: -8057338854508544355
+    second: Air Anims Final Sheet_18
+  - first:
+      213: -8860807059413565912
+    second: Air Anims Final Sheet_19
+  - first:
+      213: -1406512091562297367
+    second: Air Anims Final Sheet_20
+  - first:
+      213: -321974766019896675
+    second: Air Anims Final Sheet_21
+  - first:
+      213: 1639369986270199742
+    second: Air Anims Final Sheet_22
+  - first:
+      213: 8311325111946441752
+    second: Air Anims Final Sheet_23
+  - first:
+      213: 830685909745947253
+    second: Air Anims Final Sheet_24
+  - first:
+      213: -5213932589692326888
+    second: Air Anims Final Sheet_25
+  - first:
+      213: -420242738896340926
+    second: Air Anims Final Sheet_26
+  - first:
+      213: -3153762252268999538
+    second: Air Anims Final Sheet_27
+  - first:
+      213: 4157641496648936310
+    second: Air Anims Final Sheet_28
+  - first:
+      213: -2143383519914606480
+    second: Air Anims Final Sheet_29
+  - first:
+      213: 4887976907999469759
+    second: Air Anims Final Sheet_30
+  - first:
+      213: 7643607390292940468
+    second: Air Anims Final Sheet_31
+  - first:
+      213: -7174561400808152992
+    second: Air Anims Final Sheet_32
+  - first:
+      213: 9043594642051410493
+    second: Air Anims Final Sheet_33
+  - first:
+      213: -4939870126642130008
+    second: Air Anims Final Sheet_34
+  - first:
+      213: -3035779498740708593
+    second: Air Anims Final Sheet_35
+  - first:
+      213: 5266518412047921792
+    second: Air Anims Final Sheet_36
+  - first:
+      213: 2241443665932393483
+    second: Air Anims Final Sheet_37
+  - first:
+      213: -8216240851094830415
+    second: Air Anims Final Sheet_38
+  - first:
+      213: -5997977048788840320
+    second: Air Anims Final Sheet_39
+  - first:
+      213: -212183364447207751
+    second: Air Anims Final Sheet_40
+  - first:
+      213: -2802681841362412148
+    second: Air Anims Final Sheet_41
+  - first:
+      213: 4203380184262430628
+    second: Air Anims Final Sheet_42
+  - first:
+      213: -884233321390555918
+    second: Air Anims Final Sheet_43
+  - first:
+      213: 7220514354984434729
+    second: Air Anims Final Sheet_44
+  - first:
+      213: 7830677407327886010
+    second: Air Anims Final Sheet_45
+  - first:
+      213: 1795546957738090341
+    second: Air Anims Final Sheet_46
+  - first:
+      213: 8431947542644108678
+    second: Air Anims Final Sheet_47
+  - first:
+      213: -2529784527416019549
+    second: Air Anims Final Sheet_48
+  - first:
+      213: 4089287704460065204
+    second: Air Anims Final Sheet_49
+  - first:
+      213: -4732332479610402595
+    second: Air Anims Final Sheet_50
+  - first:
+      213: 3389699015302702307
+    second: Air Anims Final Sheet_51
+  - first:
+      213: 8358217050624172208
+    second: Air Anims Final Sheet_52
+  - first:
+      213: 1506322103730170484
+    second: Air Anims Final Sheet_53
+  - first:
+      213: 642183320371419654
+    second: Air Anims Final Sheet_54
+  - first:
+      213: 9211312280785144127
+    second: Air Anims Final Sheet_55
+  - first:
+      213: -3867017677941365506
+    second: Air Anims Final Sheet_56
+  - first:
+      213: -1170314036381103453
+    second: Air Anims Final Sheet_57
+  - first:
+      213: 7290904771160730266
+    second: Air Anims Final Sheet_58
+  - first:
+      213: 5445770002157516833
+    second: Air Anims Final Sheet_59
+  - first:
+      213: -7593712682676642778
+    second: Air Anims Final Sheet_60
+  - first:
+      213: -6850984795534498897
+    second: Air Anims Final Sheet_61
+  - first:
+      213: 5138138954737370301
+    second: Air Anims Final Sheet_62
+  - first:
+      213: 866742580821864542
+    second: Air Anims Final Sheet_63
+  - first:
+      213: -1298013941322718949
+    second: Air Anims Final Sheet_64
+  - first:
+      213: 8404731774338926799
+    second: Air Anims Final Sheet_65
+  - first:
+      213: 8739271593510486250
+    second: Air Anims Final Sheet_66
+  - first:
+      213: 4406479933409895790
+    second: Air Anims Final Sheet_67
+  - first:
+      213: 4114705290456126421
+    second: Air Anims Final Sheet_68
+  - first:
+      213: -8349721521488358478
+    second: Air Anims Final Sheet_69
+  - first:
+      213: -6158867776120829077
+    second: Air Anims Final Sheet_70
+  - first:
+      213: -6951308536044467807
+    second: Air Anims Final Sheet_71
+  - first:
+      213: 5087356898185025924
+    second: Air Anims Final Sheet_72
+  - first:
+      213: -5609819609918330396
+    second: Air Anims Final Sheet_73
+  - first:
+      213: -1933967935666278597
+    second: Air Anims Final Sheet_74
+  - first:
+      213: 7818257224225164100
+    second: Air Anims Final Sheet_75
+  - first:
+      213: -6183018653601987152
+    second: Air Anims Final Sheet_76
+  - first:
+      213: 2551141036893877900
+    second: Air Anims Final Sheet_77
+  - first:
+      213: -7665632766840390698
+    second: Air Anims Final Sheet_78
+  - first:
+      213: 5432297087000204687
+    second: Air Anims Final Sheet_79
+  - first:
+      213: -9142738191023196867
+    second: Air Anims Final Sheet_80
+  - first:
+      213: 8809948291551808571
+    second: Air Anims Final Sheet_81
+  - first:
+      213: 5233431477957086523
+    second: Air Anims Final Sheet_82
+  - first:
+      213: -5085064687992517945
+    second: Air Anims Final Sheet_83
+  - first:
+      213: 5882639255935868825
+    second: Air Anims Final Sheet_84
+  - first:
+      213: -7653389224913589684
+    second: Air Anims Final Sheet_85
+  - first:
+      213: -7753352765346556563
+    second: Air Anims Final Sheet_86
+  - first:
+      213: 2305993410144150058
+    second: Air Anims Final Sheet_87
+  - first:
+      213: 4979024016095934419
+    second: Air Anims Final Sheet_88
+  - first:
+      213: 3281587114355881294
+    second: Air Anims Final Sheet_89
+  - first:
+      213: 5714589096550073121
+    second: Air Anims Final Sheet_90
+  - first:
+      213: 1958991239036133224
+    second: Air Anims Final Sheet_91
+  - first:
+      213: 5144660256724713121
+    second: Air Anims Final Sheet_92
+  - first:
+      213: 1559388161672838030
+    second: Air Anims Final Sheet_93
+  - first:
+      213: -4488052373256024133
+    second: Air Anims Final Sheet_94
+  - first:
+      213: -1561932357162790410
+    second: Air Anims Final Sheet_95
+  - first:
+      213: -8252322852073925857
+    second: Air Anims Final Sheet_96
+  - first:
+      213: 4190836657330611037
+    second: Air Anims Final Sheet_97
+  - first:
+      213: -151212783099838608
+    second: Air Anims Final Sheet_98
+  - first:
+      213: -1699145467606678625
+    second: Air Anims Final Sheet_99
+  - first:
+      213: 2936123206359963121
+    second: Air Anims Final Sheet_100
+  - first:
+      213: 1929374632544979022
+    second: Air Anims Final Sheet_101
+  - first:
+      213: 701117665919261099
+    second: Air Anims Final Sheet_102
+  - first:
+      213: 333282208344124440
+    second: Air Anims Final Sheet_103
+  - first:
+      213: -7694338050812619641
+    second: Air Anims Final Sheet_104
+  - first:
+      213: -988568049583459974
+    second: Air Anims Final Sheet_105
+  - first:
+      213: 7022539077624841845
+    second: Air Anims Final Sheet_106
+  - first:
+      213: 1488429948906715542
+    second: Air Anims Final Sheet_107
+  - first:
+      213: 8121225605017936392
+    second: Air Anims Final Sheet_108
+  - first:
+      213: 1496977652956311888
+    second: Air Anims Final Sheet_109
+  - first:
+      213: -3181876051701476852
+    second: Air Anims Final Sheet_110
+  - first:
+      213: 129366750990743885
+    second: Air Anims Final Sheet_111
+  - first:
+      213: -5556597239477963876
+    second: Air Anims Final Sheet_112
+  - first:
+      213: 7288266451913326734
+    second: Air Anims Final Sheet_113
+  - first:
+      213: 3885796359762607851
+    second: Air Anims Final Sheet_114
+  - first:
+      213: 2050861921099087377
+    second: Air Anims Final Sheet_115
+  - first:
+      213: -8835024640977109659
+    second: Air Anims Final Sheet_116
+  - first:
+      213: -8858698691550308791
+    second: Air Anims Final Sheet_117
+  - first:
+      213: -3116498835788039683
+    second: Air Anims Final Sheet_118
+  - first:
+      213: -8840411438949494532
+    second: Air Anims Final Sheet_119
+  - first:
+      213: -4325487875359356990
+    second: Air Anims Final Sheet_120
+  - first:
+      213: -8082281460376779874
+    second: Air Anims Final Sheet_121
+  - first:
+      213: 6408958611669113980
+    second: Air Anims Final Sheet_122
+  - first:
+      213: -7875948019093192706
+    second: Air Anims Final Sheet_123
+  - first:
+      213: 762586140037734350
+    second: Air Anims Final Sheet_124
+  - first:
+      213: 3214691049718251323
+    second: Air Anims Final Sheet_125
+  - first:
+      213: -2219244370891571081
+    second: Air Anims Final Sheet_126
+  - first:
+      213: 3711237119438257251
+    second: Air Anims Final Sheet_127
+  - first:
+      213: 963216910449272374
+    second: Air Anims Final Sheet_128
+  - first:
+      213: 5918444319673523988
+    second: Air Anims Final Sheet_129
+  - first:
+      213: -5673975188298620838
+    second: Air Anims Final Sheet_130
+  - first:
+      213: -7887758891271421839
+    second: Air Anims Final Sheet_131
+  - first:
+      213: -3462102681335053433
+    second: Air Anims Final Sheet_132
+  - first:
+      213: -5209573603719095316
+    second: Air Anims Final Sheet_133
+  - first:
+      213: 7780160291339805723
+    second: Air Anims Final Sheet_134
+  - first:
+      213: 9093647025556556865
+    second: Air Anims Final Sheet_135
+  - first:
+      213: 7274909447997710349
+    second: Air Anims Final Sheet_136
+  - first:
+      213: -6447077187794858743
+    second: Air Anims Final Sheet_137
+  - first:
+      213: -5091971017913295174
+    second: Air Anims Final Sheet_138
+  - first:
+      213: 1962682365862547528
+    second: Air Anims Final Sheet_139
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 3675
+        width: 127
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b564da208a26527d0800000000000000
+      internalID: -2943838307677813157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 3673
+        width: 151
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e432a6f5e261d90800000000000000
+      internalID: -7127458372929761640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 3281
+        width: 133
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4aa90e272ec8270800000000000000
+      internalID: 8254221200085656827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 3279
+        width: 158
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57dfb58cc2816450800000000000000
+      internalID: 6080284786855761758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 2915
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd3b063a39218590800000000000000
+      internalID: -7673806960071066147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 2919
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3bb5895765c5f10800000000000000
+      internalID: 2259776176100455382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2917
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d36a1537c1e832d0800000000000000
+      internalID: -3298638481343224877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 2916
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726526b21fe8660c0800000000000000
+      internalID: -4582818404336773593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 2911
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ca1cd7e47ab9d40800000000000000
+      internalID: 5592247317869734937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 2917
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3344f4aa8fdc5c8a0800000000000000
+      internalID: -6285391237032754125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 2905
+        width: 150
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a988f12b977212aa0800000000000000
+      internalID: -6187621009397413734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2911
+        width: 39
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dcc9f4e643b6cb10800000000000000
+      internalID: 2001484201483422933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 2909
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5cca81faf0d49f80800000000000000
+      internalID: -8100620053519872932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 2917
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53d80dcc25a966e0800000000000000
+      internalID: -1843760960594455714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 2910
+        width: 33
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05906a4cf128799e0800000000000000
+      internalID: -1614678868434220720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 2898
+        width: 187
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e8a38f34c77a5d0800000000000000
+      internalID: -3051333591150981624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 2908
+        width: 47
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77cc78bbfa3bef40800000000000000
+      internalID: 5758761401329698685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 2915
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8ec28df01796ac0800000000000000
+      internalID: -3861430892628219741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 2917
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9eb01e50059e2090800000000000000
+      internalID: -8057338854508544355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 2905
+        width: 150
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e71601de6180580800000000000000
+      internalID: -8860807059413565912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2896
+        width: 238
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e7332a64b01b7ce0800000000000000
+      internalID: -1406512091562297367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 2902
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a9ebcf7ad188bf0800000000000000
+      internalID: -321974766019896675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 2906
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf7217115630c610800000000000000
+      internalID: 1639369986270199742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 2912
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814f95e6722c75370800000000000000
+      internalID: 8311325111946441752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 2896
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572545a0f60378b00800000000000000
+      internalID: 830685909745947253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 2912
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c6e8c2fe364a7b0800000000000000
+      internalID: -5213932589692326888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 2911
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24875ac947ffa2af0800000000000000
+      internalID: -420242738896340926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2903
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c687fd0f59b34d0800000000000000
+      internalID: -3153762252268999538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 2904
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67bee2fb9e8e2b930800000000000000
+      internalID: 4157641496648936310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 2902
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07040167b0c2142e0800000000000000
+      internalID: -2143383519914606480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 2902
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb0ee97a91595d340800000000000000
+      internalID: 4887976907999469759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 2903
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b616f48c6c831a60800000000000000
+      internalID: 7643607390292940468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 2904
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060e99d1b66de6c90800000000000000
+      internalID: -7174561400808152992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 2496
+        width: 148
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3aa914796d418d70800000000000000
+      internalID: 9043594642051410493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 2492
+        width: 124
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a39ee8da4e027bb0800000000000000
+      internalID: -4939870126642130008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 2483
+        width: 100
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b852151aebed5d0800000000000000
+      internalID: -3035779498740708593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 2484
+        width: 124
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082bb21b79e661940800000000000000
+      internalID: 5266518412047921792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 2484
+        width: 198
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c13f373253b1f10800000000000000
+      internalID: 2241443665932393483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 2514
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b280793a7c0afd80800000000000000
+      internalID: -8216240851094830415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 2497
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080defb17a7e2cca0800000000000000
+      internalID: -5997977048788840320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 2468
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be70eeaa5c2e0df0800000000000000
+      internalID: -212183364447207751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 2126
+        width: 241
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8dd72be6bfda19d0800000000000000
+      internalID: -2802681841362412148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 2100
+        width: 266
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4afc0e2d108655a30800000000000000
+      internalID: 4203380184262430628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 2259
+        width: 19
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fcb3f3aa729ab3f0800000000000000
+      internalID: -884233321390555918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 2104
+        width: 134
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92cb478cc8b643460800000000000000
+      internalID: 7220514354984434729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 2097
+        width: 159
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba947efc972cac60800000000000000
+      internalID: 7830677407327886010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1730
+        width: 185
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f1381e1701be810800000000000000
+      internalID: 1795546957738090341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1728
+        width: 187
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68da70c9d9b440570800000000000000
+      internalID: 8431947542644108678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 1726
+        width: 175
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a5b61d206664ecd0800000000000000
+      internalID: -2529784527416019549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 1725
+        width: 240
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9f6b0508110c830800000000000000
+      internalID: 4089287704460065204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 1726
+        width: 188
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd847c9cea0635eb0800000000000000
+      internalID: -4732332479610402595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 1501
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4eb968b41aa0f20800000000000000
+      internalID: 3389699015302702307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 1502
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b02112bf1a5ef370800000000000000
+      internalID: 8358217050624172208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 2586
+        y: 1506
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ae726f8f787e410800000000000000
+      internalID: 1506322103730170484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 1510
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a5b63d35e79e800800000000000000
+      internalID: 642183320371419654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 3134
+        y: 1504
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f39446b37b725df70800000000000000
+      internalID: 9211312280785144127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 3149
+        y: 1503
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4262609e7955ac0800000000000000
+      internalID: -3867017677941365506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 1504
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aac9d1a59532cfe0800000000000000
+      internalID: -1170314036381103453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 3187
+        y: 1509
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a6c30b24f7e2560800000000000000
+      internalID: 7290904771160730266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 1476
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128b31bc6f2439b40800000000000000
+      internalID: 5445770002157516833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 1490
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c1eae5c86bd9690800000000000000
+      internalID: -7593712682676642778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 1485
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa3609460a96ce0a0800000000000000
+      internalID: -6850984795534498897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 2126
+        y: 1487
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4c7b308265e4740800000000000000
+      internalID: 5138138954737370301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 1483
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50b799f8c9470c00800000000000000
+      internalID: 866742580821864542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 2563
+        y: 1492
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1164f192378cfde0800000000000000
+      internalID: -1298013941322718949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 1499
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc809e1c40b93a470800000000000000
+      internalID: 8404731774338926799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 1491
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0cade2631284970800000000000000
+      internalID: 8739271593510486250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 2596
+        y: 1492
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65a8c42726f62d30800000000000000
+      internalID: 4406479933409895790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 1497
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3de0939ae5a1930800000000000000
+      internalID: 4114705290456126421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 2929
+        y: 1309
+        width: 276
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b39042d384df1c80800000000000000
+      internalID: -8349721521488358478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 1306
+        width: 184
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6bc7b1836e478aa0800000000000000
+      internalID: -6158867776120829077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 1487
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9cde057bdf78f90800000000000000
+      internalID: -6951308536044467807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 1466
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48993f9152ce99640800000000000000
+      internalID: 5087356898185025924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 1479
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e92cc079cae522b0800000000000000
+      internalID: -5609819609918330396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 1990
+        y: 1307
+        width: 181
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3fad9bb86a2925e0800000000000000
+      internalID: -1933967935666278597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 2147
+        y: 1486
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b8294c587008c60800000000000000
+      internalID: 7818257224225164100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 1308
+        width: 197
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b580782b41813aa0800000000000000
+      internalID: -6183018653601987152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 1467
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c863bfba149776320800000000000000
+      internalID: 2551141036893877900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1457
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db32e1ec933e9590800000000000000
+      internalID: -7665632766840390698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 1442
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8559094b65636b40800000000000000
+      internalID: 5432297087000204687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1436
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d353aa93e087e1180800000000000000
+      internalID: -9142738191023196867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1437
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c41874b49334a70800000000000000
+      internalID: 8809948291551808571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1438
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3dcaf78332e0a840800000000000000
+      internalID: 5233431477957086523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1447
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cac25cab983e69b0800000000000000
+      internalID: -5085064687992517945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1307
+        width: 126
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f53d75c3553a150800000000000000
+      internalID: 5882639255935868825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 1305
+        width: 126
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a2931ac03b9c590800000000000000
+      internalID: -7653389224913589684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1308
+        width: 181
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65d93b2dbe866490800000000000000
+      internalID: -7753352765346556563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1440
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22a802f9c8800020800000000000000
+      internalID: 2305993410144150058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 1429
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7798f66fb091540800000000000000
+      internalID: 4979024016095934419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1436
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e457eaa081a8a8d20800000000000000
+      internalID: 3281587114355881294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 1434
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1230031918c4e4f40800000000000000
+      internalID: 5714589096550073121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 1438
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86fd9d8172cbf2b10800000000000000
+      internalID: 1958991239036133224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 1429
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae7524fe31856740800000000000000
+      internalID: 5144660256724713121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 1430
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b7573654f04a510800000000000000
+      internalID: 1559388161672838030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 1415
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfc9be252c37b1c0800000000000000
+      internalID: -4488052373256024133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1413
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f19f10fbc6e25ae0800000000000000
+      internalID: -1561932357162790410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 2444
+        y: 1414
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f139b46b61cd97d80800000000000000
+      internalID: -8252322852073925857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 1395
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5360ef5cb7d82a30800000000000000
+      internalID: 4190836657330611037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 1401
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ff5d166c8c6edf0800000000000000
+      internalID: -151212783099838608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 2628
+        y: 1391
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93c69d133c6b68e0800000000000000
+      internalID: -1699145467606678625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 2667
+        y: 1396
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5dddbff743fb820800000000000000
+      internalID: 2936123206359963121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1386
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e484e7b810486ca10800000000000000
+      internalID: 1929374632544979022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 1394
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba95ede6dcedab900800000000000000
+      internalID: 701117665919261099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1377
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c2f46176e00a400800000000000000
+      internalID: 333282208344124440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1379
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 784da832f48383590800000000000000
+      internalID: -7694338050812619641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 1379
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a71f648b896e742f0800000000000000
+      internalID: -988568049583459974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 1376
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576c0278512157160800000000000000
+      internalID: 7022539077624841845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 1372
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69933a90727f7a410800000000000000
+      internalID: 1488429948906715542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1368
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802a6efd8a364b070800000000000000
+      internalID: 8121225605017936392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1371
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051b8297e3556c410800000000000000
+      internalID: 1496977652956311888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 1370
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02d20bd694b7d3d0800000000000000
+      internalID: -3181876051701476852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 1364
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d49bc86ef5a9bc100800000000000000
+      internalID: 129366750990743885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 1353
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93fff4304003e2b0800000000000000
+      internalID: -5556597239477963876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 1346
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e80c0be19bf152560800000000000000
+      internalID: 7288266451913326734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 1359
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beef72d833f1de530800000000000000
+      internalID: 3885796359762607851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1348
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e7c722d00267c10800000000000000
+      internalID: 2050861921099087377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1336
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d7cb426efa36580800000000000000
+      internalID: -8835024640977109659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 1341
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9461de5b9749f0580800000000000000
+      internalID: -8858698691550308791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 1339
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df97fed12d8ffb4d0800000000000000
+      internalID: -3116498835788039683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_119
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1337
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf09d1182ac805580800000000000000
+      internalID: -8840411438949494532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_120
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 1335
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c742fcd1b7c8f3c0800000000000000
+      internalID: -4325487875359356990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_121
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 1320
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e93448365d7f5df80800000000000000
+      internalID: -8082281460376779874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_122
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1331
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7cd7b4b6e131f850800000000000000
+      internalID: 6408958611669113980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_123
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 1329
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff3284510303b290800000000000000
+      internalID: -7875948019093192706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_124
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 1329
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecfd593dd00459a00800000000000000
+      internalID: 762586140037734350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_125
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1319
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f75114a70ec9c20800000000000000
+      internalID: 3214691049718251323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_126
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 1321
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7700933b009a331e0800000000000000
+      internalID: -2219244370891571081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_127
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 1300
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c7c554f76f08330800000000000000
+      internalID: 3711237119438257251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_128
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 924
+        width: 126
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6366afc3da80e5d00800000000000000
+      internalID: 963216910449272374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_129
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 927
+        width: 186
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f911160c9822250800000000000000
+      internalID: 5918444319673523988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_130
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 531
+        width: 145
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50a415d0adf141b0800000000000000
+      internalID: -5673975188298620838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_131
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 533
+        width: 124
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17086db541d098290800000000000000
+      internalID: -7887758891271421839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_132
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 138
+        width: 126
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783c81f44f324ffc0800000000000000
+      internalID: -3462102681335053433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_133
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 137
+        width: 119
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb521fa860e3b7b0800000000000000
+      internalID: -5209573603719095316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_134
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 139
+        width: 99
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b14a8ec509ea8fb60800000000000000
+      internalID: 7780160291339805723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_135
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 133
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c061f1acf133e70800000000000000
+      internalID: 9093647025556556865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_136
+      rect:
+        serializedVersion: 2
+        x: 2006
+        y: 148
+        width: 115
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00690d499ba5f460800000000000000
+      internalID: 7274909447997710349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_137
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 132
+        width: 124
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d86fda4716786a0800000000000000
+      internalID: -6447077187794858743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_138
+      rect:
+        serializedVersion: 2
+        x: 2923
+        y: 144
+        width: 119
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe91be665fa559b0800000000000000
+      internalID: -5091971017913295174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Anims Final Sheet_139
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 132
+        width: 124
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84019288639dc3b10800000000000000
+      internalID: 1962682365862547528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Air Anims Final Sheet_0: -2943838307677813157
+      Air Anims Final Sheet_1: -7127458372929761640
+      Air Anims Final Sheet_10: -6187621009397413734
+      Air Anims Final Sheet_100: 2936123206359963121
+      Air Anims Final Sheet_101: 1929374632544979022
+      Air Anims Final Sheet_102: 701117665919261099
+      Air Anims Final Sheet_103: 333282208344124440
+      Air Anims Final Sheet_104: -7694338050812619641
+      Air Anims Final Sheet_105: -988568049583459974
+      Air Anims Final Sheet_106: 7022539077624841845
+      Air Anims Final Sheet_107: 1488429948906715542
+      Air Anims Final Sheet_108: 8121225605017936392
+      Air Anims Final Sheet_109: 1496977652956311888
+      Air Anims Final Sheet_11: 2001484201483422933
+      Air Anims Final Sheet_110: -3181876051701476852
+      Air Anims Final Sheet_111: 129366750990743885
+      Air Anims Final Sheet_112: -5556597239477963876
+      Air Anims Final Sheet_113: 7288266451913326734
+      Air Anims Final Sheet_114: 3885796359762607851
+      Air Anims Final Sheet_115: 2050861921099087377
+      Air Anims Final Sheet_116: -8835024640977109659
+      Air Anims Final Sheet_117: -8858698691550308791
+      Air Anims Final Sheet_118: -3116498835788039683
+      Air Anims Final Sheet_119: -8840411438949494532
+      Air Anims Final Sheet_12: -8100620053519872932
+      Air Anims Final Sheet_120: -4325487875359356990
+      Air Anims Final Sheet_121: -8082281460376779874
+      Air Anims Final Sheet_122: 6408958611669113980
+      Air Anims Final Sheet_123: -7875948019093192706
+      Air Anims Final Sheet_124: 762586140037734350
+      Air Anims Final Sheet_125: 3214691049718251323
+      Air Anims Final Sheet_126: -2219244370891571081
+      Air Anims Final Sheet_127: 3711237119438257251
+      Air Anims Final Sheet_128: 963216910449272374
+      Air Anims Final Sheet_129: 5918444319673523988
+      Air Anims Final Sheet_13: -1843760960594455714
+      Air Anims Final Sheet_130: -5673975188298620838
+      Air Anims Final Sheet_131: -7887758891271421839
+      Air Anims Final Sheet_132: -3462102681335053433
+      Air Anims Final Sheet_133: -5209573603719095316
+      Air Anims Final Sheet_134: 7780160291339805723
+      Air Anims Final Sheet_135: 9093647025556556865
+      Air Anims Final Sheet_136: 7274909447997710349
+      Air Anims Final Sheet_137: -6447077187794858743
+      Air Anims Final Sheet_138: -5091971017913295174
+      Air Anims Final Sheet_139: 1962682365862547528
+      Air Anims Final Sheet_14: -1614678868434220720
+      Air Anims Final Sheet_15: -3051333591150981624
+      Air Anims Final Sheet_16: 5758761401329698685
+      Air Anims Final Sheet_17: -3861430892628219741
+      Air Anims Final Sheet_18: -8057338854508544355
+      Air Anims Final Sheet_19: -8860807059413565912
+      Air Anims Final Sheet_2: 8254221200085656827
+      Air Anims Final Sheet_20: -1406512091562297367
+      Air Anims Final Sheet_21: -321974766019896675
+      Air Anims Final Sheet_22: 1639369986270199742
+      Air Anims Final Sheet_23: 8311325111946441752
+      Air Anims Final Sheet_24: 830685909745947253
+      Air Anims Final Sheet_25: -5213932589692326888
+      Air Anims Final Sheet_26: -420242738896340926
+      Air Anims Final Sheet_27: -3153762252268999538
+      Air Anims Final Sheet_28: 4157641496648936310
+      Air Anims Final Sheet_29: -2143383519914606480
+      Air Anims Final Sheet_3: 6080284786855761758
+      Air Anims Final Sheet_30: 4887976907999469759
+      Air Anims Final Sheet_31: 7643607390292940468
+      Air Anims Final Sheet_32: -7174561400808152992
+      Air Anims Final Sheet_33: 9043594642051410493
+      Air Anims Final Sheet_34: -4939870126642130008
+      Air Anims Final Sheet_35: -3035779498740708593
+      Air Anims Final Sheet_36: 5266518412047921792
+      Air Anims Final Sheet_37: 2241443665932393483
+      Air Anims Final Sheet_38: -8216240851094830415
+      Air Anims Final Sheet_39: -5997977048788840320
+      Air Anims Final Sheet_4: -7673806960071066147
+      Air Anims Final Sheet_40: -212183364447207751
+      Air Anims Final Sheet_41: -2802681841362412148
+      Air Anims Final Sheet_42: 4203380184262430628
+      Air Anims Final Sheet_43: -884233321390555918
+      Air Anims Final Sheet_44: 7220514354984434729
+      Air Anims Final Sheet_45: 7830677407327886010
+      Air Anims Final Sheet_46: 1795546957738090341
+      Air Anims Final Sheet_47: 8431947542644108678
+      Air Anims Final Sheet_48: -2529784527416019549
+      Air Anims Final Sheet_49: 4089287704460065204
+      Air Anims Final Sheet_5: 2259776176100455382
+      Air Anims Final Sheet_50: -4732332479610402595
+      Air Anims Final Sheet_51: 3389699015302702307
+      Air Anims Final Sheet_52: 8358217050624172208
+      Air Anims Final Sheet_53: 1506322103730170484
+      Air Anims Final Sheet_54: 642183320371419654
+      Air Anims Final Sheet_55: 9211312280785144127
+      Air Anims Final Sheet_56: -3867017677941365506
+      Air Anims Final Sheet_57: -1170314036381103453
+      Air Anims Final Sheet_58: 7290904771160730266
+      Air Anims Final Sheet_59: 5445770002157516833
+      Air Anims Final Sheet_6: -3298638481343224877
+      Air Anims Final Sheet_60: -7593712682676642778
+      Air Anims Final Sheet_61: -6850984795534498897
+      Air Anims Final Sheet_62: 5138138954737370301
+      Air Anims Final Sheet_63: 866742580821864542
+      Air Anims Final Sheet_64: -1298013941322718949
+      Air Anims Final Sheet_65: 8404731774338926799
+      Air Anims Final Sheet_66: 8739271593510486250
+      Air Anims Final Sheet_67: 4406479933409895790
+      Air Anims Final Sheet_68: 4114705290456126421
+      Air Anims Final Sheet_69: -8349721521488358478
+      Air Anims Final Sheet_7: -4582818404336773593
+      Air Anims Final Sheet_70: -6158867776120829077
+      Air Anims Final Sheet_71: -6951308536044467807
+      Air Anims Final Sheet_72: 5087356898185025924
+      Air Anims Final Sheet_73: -5609819609918330396
+      Air Anims Final Sheet_74: -1933967935666278597
+      Air Anims Final Sheet_75: 7818257224225164100
+      Air Anims Final Sheet_76: -6183018653601987152
+      Air Anims Final Sheet_77: 2551141036893877900
+      Air Anims Final Sheet_78: -7665632766840390698
+      Air Anims Final Sheet_79: 5432297087000204687
+      Air Anims Final Sheet_8: 5592247317869734937
+      Air Anims Final Sheet_80: -9142738191023196867
+      Air Anims Final Sheet_81: 8809948291551808571
+      Air Anims Final Sheet_82: 5233431477957086523
+      Air Anims Final Sheet_83: -5085064687992517945
+      Air Anims Final Sheet_84: 5882639255935868825
+      Air Anims Final Sheet_85: -7653389224913589684
+      Air Anims Final Sheet_86: -7753352765346556563
+      Air Anims Final Sheet_87: 2305993410144150058
+      Air Anims Final Sheet_88: 4979024016095934419
+      Air Anims Final Sheet_89: 3281587114355881294
+      Air Anims Final Sheet_9: -6285391237032754125
+      Air Anims Final Sheet_90: 5714589096550073121
+      Air Anims Final Sheet_91: 1958991239036133224
+      Air Anims Final Sheet_92: 5144660256724713121
+      Air Anims Final Sheet_93: 1559388161672838030
+      Air Anims Final Sheet_94: -4488052373256024133
+      Air Anims Final Sheet_95: -1561932357162790410
+      Air Anims Final Sheet_96: -8252322852073925857
+      Air Anims Final Sheet_97: 4190836657330611037
+      Air Anims Final Sheet_98: -151212783099838608
+      Air Anims Final Sheet_99: -1699145467606678625
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

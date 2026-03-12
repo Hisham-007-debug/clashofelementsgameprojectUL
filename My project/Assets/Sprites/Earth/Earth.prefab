@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8109876133589595845}
   m_Layer: 0
   m_Name: Hurtbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +62,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -92,9 +92,11 @@ GameObject:
   - component: {fileID: 1797318237264236445}
   - component: {fileID: 6974735620605338981}
   - component: {fileID: 5641285794152868473}
+  - component: {fileID: 1111111111111111111}
+  - component: {fileID: 2222222222222222222}
   m_Layer: 0
   m_Name: Earth
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,7 +232,7 @@ Animator:
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -261,7 +263,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &5641285794152868473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,11 +274,126 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b12209211fba55a4ab0ffade013510d1, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: '::'
   moveSpeed: 5
   jumpForce: 10
-  isGrounded: 0
+  groundCheck: {fileID: 4321801822644786988}
+  groundCheckRadius: 0.35
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  lightAttackHitbox: {fileID: 6333780790305261929}
+  heavyAttackHitbox: {fileID: 7575957445843827146}
+--- !u!114 &1111111111111111111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378614350974100351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: c31b4efec56a8184fb56fde9fd96ff21, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 34e99d06-6af7-4dec-8462-33eb15d1e0e9
+    m_ActionName: 'Figther/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8484e210-2c06-47a9-828c-cdc0df387810
+    m_ActionName: 'Figther/Look[/Mouse/delta]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2efba954-30e7-419b-9db3-2dc9cecb27b6
+    m_ActionName: 'Figther/LightAttack[/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a22e6353-6dea-43a6-94f4-35f01d92f927
+    m_ActionName: 'Figther/Jump[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 51ae6090-e9f0-4357-8b4f-7599a9c883fb
+    m_ActionName: 'Figther/HeavyAttack[/Keyboard/k]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ff0bc364-eb63-420b-a2ef-ce98d29f61b4
+    m_ActionName: 'UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c2877a67-c5dc-499e-ac47-3be9def9253b
+    m_ActionName: 'UI/Submit[/Keyboard/enter]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b27cde7c-45c9-4156-b2ab-8d23713f16fa
+    m_ActionName: 'UI/Cancel[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6b4d3a16-bdee-4ee1-bf64-01b357f56ee1
+    m_ActionName: 'UI/Point[/Mouse/position]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ec3b3944-d6b7-4c6d-9edd-30beaecb8028
+    m_ActionName: 'UI/Click[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 10fa456f-4859-4967-ba46-a69fc7fbe04a
+    m_ActionName: 'UI/ScrollWheel[/Mouse/scroll]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ad9ce315-025b-4cdd-b76c-3171b8110d26
+    m_ActionName: 'UI/MiddleClick[/Mouse/middleButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 38311969-1c8f-4d0f-96fc-246f895aaebd
+    m_ActionName: 'UI/RightClick[/Mouse/rightButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fda5df0a-4bdc-4db9-bc03-badd9f726f8e
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 07952ff7-543c-404c-8b21-11ccbcda4468
+    m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7cd1fe38-39c5-45fa-8506-ac6116232a5c
+    m_ActionName: Figther/Block
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme:
+  m_DefaultActionMap: Figther
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &2222222222222222222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378614350974100351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3723d6e77bdb2b418d063b019af6b00, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::FighterHealth
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
 --- !u!1 &2749893636380328958
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +438,7 @@ GameObject:
   - component: {fileID: 6333780790305261929}
   m_Layer: 0
   m_Name: LightAttackHitbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -397,8 +514,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53733303b122d20489da7a01f458c1d8, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::HitboxController
+  damage: 10
+  knockbackForce: 5
+  hitStunDuration: 0.3
 --- !u!1 &7026889494251040759
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,7 +532,7 @@ GameObject:
   - component: {fileID: 7575957445843827146}
   m_Layer: 0
   m_Name: HeavyAttackHitbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -488,8 +608,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53733303b122d20489da7a01f458c1d8, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::HitboxController
+  damage: 10
+  knockbackForce: 5
+  hitStunDuration: 0.3
 --- !u!1 &7784608790289966018
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,7 +624,7 @@ GameObject:
   - component: {fileID: 3968465976398722342}
   m_Layer: 0
   m_Name: Attacks
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

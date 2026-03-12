@@ -1,105 +1,175 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovementAir : MonoBehaviour
 {
-    [Header("Stats")]
+    [Header("Movement")]
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
-    public bool isGrounded;
+
+    [Header("Ground Check")]
+    public Transform groundCheck;
+    public float groundCheckRadius = 0.1f;
+    public LayerMask groundLayer;
+
+    [Header("Hitbox References")]
+    public HitboxController lightAttackHitbox;
+    public HitboxController heavyAttackHitbox;
 
     private Rigidbody2D rb;
     private Animator animator;
-    private Vector2 moveInput;
     private PlayerInput playerInput;
+    private Vector3 originalScale;
 
-    // Input action references (auto-wired)
+    private Vector2 moveInput;
+    private bool isGrounded;
+    private bool isInHitStun;
+    private bool isBlocking;
+
     private InputAction moveAction;
     private InputAction jumpAction;
     private InputAction lightAttackAction;
     private InputAction heavyAttackAction;
-    private InputAction blockAction;
+    // private InputAction blockAction;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
+        originalScale = transform.localScale;
 
         var actions = playerInput.actions;
-        moveAction       = actions["Move"];
-        jumpAction       = actions["Jump"];
-        lightAttackAction  = actions["LightAttack"];
-        heavyAttackAction  = actions["HeavyAttack"];
-        blockAction      = actions["Block"];
+        moveAction        = actions["Move"];
+        jumpAction        = actions["Jump"];
+        lightAttackAction = actions["LightAttack"];
+        heavyAttackAction = actions["HeavyAttack"];
+        // blockAction    = actions["Block"];
     }
 
     void OnEnable()
     {
-        jumpAction.performed        += OnJump;
-        lightAttackAction.performed += OnLightAttack;
-        heavyAttackAction.performed += OnHeavyAttack;
-        blockAction.performed       += OnBlock;
+        if (jumpAction != null)        jumpAction.performed        += OnJump;
+        if (lightAttackAction != null) lightAttackAction.performed += OnLightAttack;
+        if (heavyAttackAction != null) heavyAttackAction.performed += OnHeavyAttack;
+        // if (blockAction != null)
+        // {
+        //     blockAction.performed += OnBlock;
+        //     blockAction.canceled  += OnBlockReleased;
+        // }
     }
 
     void OnDisable()
     {
-        jumpAction.performed        -= OnJump;
-        lightAttackAction.performed -= OnLightAttack;
-        heavyAttackAction.performed -= OnHeavyAttack;
-        blockAction.performed       -= OnBlock;
+        if (jumpAction != null)        jumpAction.performed        -= OnJump;
+        if (lightAttackAction != null) lightAttackAction.performed -= OnLightAttack;
+        if (heavyAttackAction != null) heavyAttackAction.performed -= OnHeavyAttack;
+        // if (blockAction != null)
+        // {
+        //     blockAction.performed -= OnBlock;
+        //     blockAction.canceled  -= OnBlockReleased;
+        // }
     }
 
     void Update()
     {
-        moveInput = moveAction.ReadValue<Vector2>();
-        animator.SetFloat("Speed", Mathf.Abs(moveInput.x));
+        // Ground check
+        isGrounded = Physics2D.OverlapCircle(
+            groundCheck.position,
+            groundCheckRadius,
+            groundLayer
+        );
+        Debug.Log("isGrounded: " + isGrounded);
         animator.SetBool("IsGrounded", isGrounded);
 
-        // Flip sprite to face opponent
-        if (moveInput.x != 0)
+        if (isInHitStun) return;
+
+        // Movement
+        moveInput = moveAction.ReadValue<Vector2>();
+        animator.SetFloat("Speed", Mathf.Abs(moveInput.x));
+        animator.SetBool("IsBlocking", isBlocking);
+
+        // Flip sprite while keeping original scale
+        if (moveInput.x > 0)
             transform.localScale = new Vector3(
-                moveInput.x > 0 ? 1 : -1, 1, 1);
+                Mathf.Abs(originalScale.x),
+                originalScale.y,
+                originalScale.z);
+        else if (moveInput.x < 0)
+            transform.localScale = new Vector3(
+                -Mathf.Abs(originalScale.x),
+                originalScale.y,
+                originalScale.z);
     }
 
     void FixedUpdate()
     {
+        if (isInHitStun) return;
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
     }
 
     private void OnJump(InputAction.CallbackContext ctx)
+{
+    if (isGrounded && !isInHitStun)
     {
-        if (isGrounded)
-        {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            animator.SetTrigger("Jump");
-        }
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        animator.SetTrigger("Jump");
     }
+}
 
     private void OnLightAttack(InputAction.CallbackContext ctx)
     {
-        animator.SetTrigger("LightAttack");
-        // TODO: enable hitbox collider for a few frames
+        if (!isInHitStun)
+            animator.SetTrigger("LightAttack");
     }
 
     private void OnHeavyAttack(InputAction.CallbackContext ctx)
     {
-        animator.SetTrigger("HeavyAttack");
+        if (!isInHitStun)
+            animator.SetTrigger("HeavyAttack");
     }
 
     private void OnBlock(InputAction.CallbackContext ctx)
     {
-        animator.SetBool("Blocking", ctx.ReadValueAsButton());
+        isBlocking = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D col)
+    private void OnBlockReleased(InputAction.CallbackContext ctx)
     {
-        if (col.gameObject.CompareTag("Ground")) isGrounded = true;
+        isBlocking = false;
     }
 
-    private void OnCollisionExit2D(Collision2D col)
+    // Called by Animation Events
+    public void EnableLightHitbox()  => lightAttackHitbox?.EnableHitbox();
+    public void DisableLightHitbox() => lightAttackHitbox?.DisableHitbox();
+    public void EnableHeavyHitbox()  => heavyAttackHitbox?.EnableHitbox();
+    public void DisableHeavyHitbox() => heavyAttackHitbox?.DisableHitbox();
+
+    // Called by HitboxController when this fighter gets hit
+    public void ApplyHitStun(float duration, float knockbackForce, Vector3 attackerPosition)
     {
-        if (col.gameObject.CompareTag("Ground")) isGrounded = false;
+        if (isBlocking)
+        {
+            float blockDir = transform.position.x > attackerPosition.x ? 1f : -1f;
+            rb.AddForce(new Vector2(blockDir * knockbackForce * 0.3f, 0), ForceMode2D.Impulse);
+            animator.SetTrigger("Block");
+            return;
+        }
+
+        StartCoroutine(HitStunCoroutine(duration, knockbackForce, attackerPosition));
+    }
+
+    private IEnumerator HitStunCoroutine(float duration, float force, Vector3 attackerPos)
+    {
+        isInHitStun = true;
+        animator.SetTrigger("Hit");
+
+        float dir = transform.position.x > attackerPos.x ? 1f : -1f;
+        rb.AddForce(new Vector2(dir * force, 3f), ForceMode2D.Impulse);
+
+        yield return new WaitForSeconds(duration);
+        isInHitStun = false;
     }
 }

@@ -3,11 +3,19 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(PlayerInput))]
 public class PlayerMovementEarth : MonoBehaviour
 {
     [Header("Movement")]
-    public float moveSpeed = 5f;
-    public float jumpForce = 10f;
+    public float moveSpeed = 7f;
+    public float jumpForce = 3.2f;
+    public float acceleration = 18f;
+    public float deceleration = 22f;
+    public float forwardJumpBoost = 1.8f;
+
+    [Header("Jump Feel")]
+    public float fallMultiplier = 3.5f;
 
     [Header("Ground Check")]
     public Transform groundCheck;
@@ -27,6 +35,7 @@ public class PlayerMovementEarth : MonoBehaviour
     private bool isGrounded;
     private bool isInHitStun;
     private bool isBlocking;
+    private bool isForwardJumping;
 
     private InputAction moveAction;
     private InputAction jumpAction;
@@ -76,17 +85,27 @@ public class PlayerMovementEarth : MonoBehaviour
     void Update()
     {
         // Ground check
-        isGrounded = Physics2D.OverlapCircle(
-            groundCheck.position,
-            groundCheckRadius,
-            groundLayer
-        );
+        if (groundCheck != null)
+        {
+            isGrounded = Physics2D.OverlapCircle(
+                groundCheck.position,
+                groundCheckRadius,
+                groundLayer
+            );
+        }
+
         animator.SetBool("IsGrounded", isGrounded);
+
+        // Reset forward jump state on landing
+        if (isGrounded)
+            isForwardJumping = false;
 
         if (isInHitStun) return;
 
         // Movement
-        moveInput = moveAction.ReadValue<Vector2>();
+        if (moveAction != null)
+            moveInput = moveAction.ReadValue<Vector2>();
+
         animator.SetFloat("Speed", Mathf.Abs(moveInput.x));
         animator.SetBool("IsBlocking", isBlocking);
 
@@ -106,15 +125,47 @@ public class PlayerMovementEarth : MonoBehaviour
     void FixedUpdate()
     {
         if (isInHitStun) return;
-        rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
+
+        // Smooth horizontal movement (ONLY on ground)
+        if (isGrounded)
+        {
+            float targetSpeed = moveInput.x * moveSpeed;
+            float speedDifference = targetSpeed - rb.linearVelocity.x;
+
+            float accelRate = Mathf.Abs(targetSpeed) > 0.01f ? acceleration : deceleration;
+            float movementForce = speedDifference * accelRate;
+
+            rb.AddForce(new Vector2(movementForce, 0f));
+
+            // Clamp horizontal speed
+            float clampedX = Mathf.Clamp(rb.linearVelocity.x, -moveSpeed, moveSpeed);
+            rb.linearVelocity = new Vector2(clampedX, rb.linearVelocity.y);
+        }
+
+        // Better jump feel (faster falling)
+        if (rb.linearVelocity.y < 0)
+        {
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1f) * Time.fixedDeltaTime;
+        }
     }
 
     private void OnJump(InputAction.CallbackContext ctx)
     {
         if (isGrounded && !isInHitStun)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            animator.SetTrigger("Jump");
+            // Moving jump = forward flip jump
+            if (Mathf.Abs(moveInput.x) > 0.1f)
+            {
+                rb.linearVelocity = new Vector2(moveInput.x * forwardJumpBoost, jumpForce);
+                animator.SetTrigger("ForwardJump");
+                isForwardJumping = true;
+            }
+            else
+            {
+                rb.linearVelocity = new Vector2(0f, jumpForce);
+                animator.SetTrigger("Jump");
+                isForwardJumping = false;
+            }
         }
     }
 
@@ -170,5 +221,14 @@ public class PlayerMovementEarth : MonoBehaviour
 
         yield return new WaitForSeconds(duration);
         isInHitStun = false;
+    }
+
+    // Draw ground check in Scene view
+    void OnDrawGizmosSelected()
+    {
+        if (groundCheck == null) return;
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
 }

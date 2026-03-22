@@ -41,7 +41,6 @@ public class PlayerMovementEarth : MonoBehaviour
     private InputAction jumpAction;
     private InputAction lightAttackAction;
     private InputAction heavyAttackAction;
-    // private InputAction blockAction;
 
     void Awake()
     {
@@ -55,7 +54,6 @@ public class PlayerMovementEarth : MonoBehaviour
         jumpAction        = actions["Jump"];
         lightAttackAction = actions["LightAttack"];
         heavyAttackAction = actions["HeavyAttack"];
-        // blockAction    = actions["Block"];
     }
 
     void OnEnable()
@@ -63,11 +61,6 @@ public class PlayerMovementEarth : MonoBehaviour
         if (jumpAction != null)        jumpAction.performed        += OnJump;
         if (lightAttackAction != null) lightAttackAction.performed += OnLightAttack;
         if (heavyAttackAction != null) heavyAttackAction.performed += OnHeavyAttack;
-        // if (blockAction != null)
-        // {
-        //     blockAction.performed += OnBlock;
-        //     blockAction.canceled  += OnBlockReleased;
-        // }
     }
 
     void OnDisable()
@@ -75,11 +68,7 @@ public class PlayerMovementEarth : MonoBehaviour
         if (jumpAction != null)        jumpAction.performed        -= OnJump;
         if (lightAttackAction != null) lightAttackAction.performed -= OnLightAttack;
         if (heavyAttackAction != null) heavyAttackAction.performed -= OnHeavyAttack;
-        // if (blockAction != null)
-        // {
-        //     blockAction.performed -= OnBlock;
-        //     blockAction.canceled  -= OnBlockReleased;
-        // }
+
     }
 
     void Update()

@@ -11,9 +11,6 @@ public class SimplePunch : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.f))
-        {
-            animator.SetTrigger("PunchEarth");
-        }
+        
     }
 }

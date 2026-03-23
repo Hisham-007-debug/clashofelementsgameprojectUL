@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 5123040733454684593}
   - component: {fileID: 3105373799356701693}
   - component: {fileID: -3392745072704976945}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Air
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 0a10e8f90ba94261b19512ff9338b877, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

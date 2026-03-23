@@ -158,7 +158,7 @@ public class PlayerMovementAir : MonoBehaviour
         animator.SetTrigger("Hit");
 
         float dir = transform.position.x > attackerPos.x ? 1f : -1f;
-        rb.AddForce(new Vector2(dir * force, 1.5f), ForceMode2D.Impulse);
+        rb.AddForce(new Vector2(dir * force, 3f), ForceMode2D.Impulse);
 
         yield return new WaitForSeconds(duration);
         isInHitStun = false;

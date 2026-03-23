@@ -559,7 +559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 524066441}
   - component: {fileID: 524066440}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2120,6 +2120,14 @@ PrefabInstance:
     - target: {fileID: 7422052925661328703, guid: 44fff6746218c964c88bd29c5c6307b1, type: 3}
       propertyPath: m_Name
       value: Air
+      objectReference: {fileID: 0}
+    - target: {fileID: 7588054925157066685, guid: 44fff6746218c964c88bd29c5c6307b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7588054925157066685, guid: 44fff6746218c964c88bd29c5c6307b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

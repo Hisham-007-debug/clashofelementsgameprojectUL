@@ -2199,6 +2199,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662681678}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1691319201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,6 +2291,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 4d28451 (added tilemap)
 --- !u!1 &1838995001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,4 +2695,3 @@ SceneRoots:
   - {fileID: 524066441}
   - {fileID: 2108766408}
   - {fileID: 491201516}
-  - {fileID: 1691319203}

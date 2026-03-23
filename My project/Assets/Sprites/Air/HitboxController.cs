@@ -9,6 +9,7 @@ public class HitboxController : MonoBehaviour
 
     private Collider2D col;
     private GameObject owner; // the fighter this hitbox belongs to
+    private bool hasHit;
 
     void Awake()
     {
@@ -23,33 +24,48 @@ public class HitboxController : MonoBehaviour
     // Called by Animation Events
     public void EnableHitbox()
     {
+        hasHit = false;
         col.enabled = true;
     }
 
     public void DisableHitbox()
     {
         col.enabled = false;
+        hasHit = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (hasHit) return;
+        Debug.Log($"[Hitbox] OnTriggerEnter2D hit: {other.gameObject.name}, tag: {other.tag}, owner: {owner.name}");
+
         // Don't hit yourself
         if (other.gameObject == owner) return;
         if (other.transform.root.gameObject == owner) return;
 
         // Only hit fighters tagged "Player"
-        if (!other.CompareTag("Player")) return;
+        if (!other.CompareTag("Player"))
+        {
+            Debug.Log($"[Hitbox] Ignored {other.gameObject.name} - not tagged Player");
+            return;
+        }
 
         FighterHealth health = other.transform.root.GetComponent<FighterHealth>();
-        PlayerMovementAir controller = other.transform.root.GetComponent<PlayerMovementAir>();
+        PlayerMovementAir airController = other.transform.root.GetComponent<PlayerMovementAir>();
+        PlayerMovementEarth earthController = other.transform.root.GetComponent<PlayerMovementEarth>();
+
+        Debug.Log($"[Hitbox] health={health}, airController={airController}, earthController={earthController}");
 
         if (health != null)
             health.TakeDamage(damage);
 
-        if (controller != null)
-            controller.ApplyHitStun(hitStunDuration, knockbackForce, transform.root.position);
+        if (airController != null)
+            airController.ApplyHitStun(hitStunDuration, knockbackForce, transform.root.position);
+        else if (earthController != null)
+            earthController.ApplyHitStun(hitStunDuration, knockbackForce, transform.root.position);
 
         // Disable after landing hit (prevents multi-hit on same swing)
+        hasHit = true;
         DisableHitbox();
     }
 }

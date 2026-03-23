@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,14 +9,65 @@ public class FighterHealth : MonoBehaviour
     public float currentHealth;
 
     [Header("UI")]
-    public Slider healthBar;
+    public Image healthFill;       // main coloured bar
+    public Image ghostFill;        // delayed white bar behind main
+    public Text nameLabel;         // optional player name
+
+    [Header("Ghost Bar")]
+    public float ghostDelay  = 0.6f;   // seconds before ghost starts draining
+    public float ghostSpeed  = 0.25f;  // fraction per second
 
     public bool IsDead { get; private set; }
+
+    private float ghostHealth;
+    private float timeSinceHit;
+
+    // Gradient: green (100%) → yellow (50%) → red (0%)
+    private static readonly Gradient healthGradient = new Gradient
+    {
+        colorKeys = new GradientColorKey[]
+        {
+            new GradientColorKey(new Color(0.15f, 0.85f, 0.25f), 1.00f),
+            new GradientColorKey(new Color(0.95f, 0.85f, 0.10f), 0.50f),
+            new GradientColorKey(new Color(0.90f, 0.15f, 0.10f), 0.00f),
+        },
+        alphaKeys = new GradientAlphaKey[]
+        {
+            new GradientAlphaKey(1f, 0f),
+            new GradientAlphaKey(1f, 1f),
+        }
+    };
 
     void Start()
     {
         currentHealth = maxHealth;
-        UpdateHealthBar();
+        ghostHealth   = maxHealth;
+        timeSinceHit  = ghostDelay;
+
+        if (healthFill != null)
+        {
+            healthFill.type       = UnityEngine.UI.Image.Type.Filled;
+            healthFill.fillMethod = UnityEngine.UI.Image.FillMethod.Horizontal;
+        }
+        if (ghostFill != null)
+        {
+            ghostFill.type       = UnityEngine.UI.Image.Type.Filled;
+            ghostFill.fillMethod = UnityEngine.UI.Image.FillMethod.Horizontal;
+        }
+
+        Refresh();
+    }
+
+    void Update()
+    {
+        timeSinceHit += Time.deltaTime;
+
+        if (timeSinceHit >= ghostDelay && ghostHealth > currentHealth)
+        {
+            ghostHealth = Mathf.Max(currentHealth,
+                ghostHealth - ghostSpeed * maxHealth * Time.deltaTime);
+            UpdateGhost();
+        }
     }
 
     public void TakeDamage(float amount)
@@ -23,22 +75,40 @@ public class FighterHealth : MonoBehaviour
         if (IsDead) return;
 
         currentHealth = Mathf.Max(0, currentHealth - amount);
-        UpdateHealthBar();
+        timeSinceHit  = 0f;
+        Debug.Log($"[Health] currentHealth={currentHealth}, healthFill={(healthFill == null ? "NULL" : healthFill.name)}");
+        Refresh();
 
         if (currentHealth <= 0)
             OnKO();
     }
 
-    void UpdateHealthBar()
+    void Refresh()
     {
-        if (healthBar != null)
-            healthBar.value = currentHealth / maxHealth;
+        float pct = currentHealth / maxHealth;
+
+        if (healthFill != null)
+        {
+            healthFill.fillAmount = pct;
+            healthFill.color      = healthGradient.Evaluate(pct);
+            Debug.Log($"[Health] pct={pct}, fillAmount={healthFill.fillAmount}, type={healthFill.type}");
+        }
+    }
+
+    void UpdateGhost()
+    {
+        if (ghostFill != null)
+            ghostFill.fillAmount = ghostHealth / maxHealth;
     }
 
     void OnKO()
     {
         IsDead = true;
         GetComponent<Animator>().SetTrigger("KO");
-        GetComponent<PlayerMovementAir>().enabled = false;
+
+        var air   = GetComponent<PlayerMovementAir>();
+        var earth = GetComponent<PlayerMovementEarth>();
+        if (air   != null) air.enabled   = false;
+        if (earth != null) earth.enabled = false;
     }
 }

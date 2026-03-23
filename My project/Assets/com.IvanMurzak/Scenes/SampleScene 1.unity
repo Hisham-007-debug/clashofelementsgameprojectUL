@@ -2671,6 +2671,9 @@ PrefabInstance:
       value: 10
 =======
       value: 5
+<<<<<<< HEAD
+>>>>>>> parent of 1ad6d6a (Fixed bugs)
+=======
 >>>>>>> parent of 1ad6d6a (Fixed bugs)
       objectReference: {fileID: 0}
     - target: {fileID: 7228719870056808847, guid: 0e395b6f257c6924bb2adeef61082faa, type: 3}

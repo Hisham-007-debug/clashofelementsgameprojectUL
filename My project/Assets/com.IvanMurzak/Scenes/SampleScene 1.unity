@@ -2067,11 +2067,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1895159425512371271, guid: 44fff6746218c964c88bd29c5c6307b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.56
+      value: -6.95
       objectReference: {fileID: 0}
     - target: {fileID: 1895159425512371271, guid: 44fff6746218c964c88bd29c5c6307b1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.05
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1895159425512371271, guid: 44fff6746218c964c88bd29c5c6307b1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2112,6 +2112,10 @@ PrefabInstance:
     - target: {fileID: 4272182409356683138, guid: 44fff6746218c964c88bd29c5c6307b1, type: 3}
       propertyPath: m_Offset.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123040733454684593, guid: 44fff6746218c964c88bd29c5c6307b1, type: 3}
+      propertyPath: jumpForce
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7422052925661328703, guid: 44fff6746218c964c88bd29c5c6307b1, type: 3}
       propertyPath: m_Name
@@ -2553,6 +2557,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 5641285794152868473, guid: 0e395b6f257c6924bb2adeef61082faa, type: 3}
+      propertyPath: jumpForce
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7228719870056808847, guid: 0e395b6f257c6924bb2adeef61082faa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.11
@@ -2620,7 +2628,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FighterHealth
   maxHealth: 100
   currentHealth: 0
-  healthBar: {fileID: 0}
+  healthFill: {fileID: 0}
+  ghostFill: {fileID: 0}
+  nameLabel: {fileID: 0}
+  ghostDelay: 0.6
+  ghostSpeed: 0.25
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

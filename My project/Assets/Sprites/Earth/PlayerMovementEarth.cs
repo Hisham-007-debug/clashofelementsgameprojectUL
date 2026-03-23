@@ -9,13 +9,13 @@ public class PlayerMovementEarth : MonoBehaviour
 {
     [Header("Movement")]
     public float moveSpeed = 7f;
-    public float jumpForce = 3.2f;
+    public float jumpForce = 2.4f;
     public float acceleration = 18f;
     public float deceleration = 22f;
-    public float forwardJumpBoost = 1.8f;
+   
 
     [Header("Jump Feel")]
-    public float fallMultiplier = 3.5f;
+    public float fallMultiplier = 4f;
 
     [Header("Ground Check")]
     public Transform groundCheck;
@@ -150,23 +150,13 @@ public class PlayerMovementEarth : MonoBehaviour
     }
 
     private void OnJump(InputAction.CallbackContext ctx)
+{
+    if (isGrounded && !isInHitStun)
     {
-        if (isGrounded && !isInHitStun)
-        {
-            // Moving jump = forward flip jump
-            if (Mathf.Abs(moveInput.x) > 0.1f)
-            {
-                rb.linearVelocity = new Vector2(moveInput.x * forwardJumpBoost, jumpForce);
-                animator.SetTrigger("ForwardJump");
-                isForwardJumping = true;
-            }
-            else
-            {
-                rb.linearVelocity = new Vector2(0f, jumpForce);
-                animator.SetTrigger("Jump");
-                isForwardJumping = false;
-            }
-        }
+        rb.linearVelocity = new Vector2(0f, jumpForce);
+        animator.SetTrigger("Jump");
+        isForwardJumping = false;
+    }
     }
 
     private void OnLightAttack(InputAction.CallbackContext ctx)

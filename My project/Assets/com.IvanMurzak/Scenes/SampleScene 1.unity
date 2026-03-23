@@ -2667,7 +2667,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5641285794152868473, guid: 0e395b6f257c6924bb2adeef61082faa, type: 3}
       propertyPath: jumpForce
+<<<<<<< HEAD
       value: 10
+=======
+      value: 5
+>>>>>>> parent of 1ad6d6a (Fixed bugs)
       objectReference: {fileID: 0}
     - target: {fileID: 7228719870056808847, guid: 0e395b6f257c6924bb2adeef61082faa, type: 3}
       propertyPath: m_LocalPosition.x

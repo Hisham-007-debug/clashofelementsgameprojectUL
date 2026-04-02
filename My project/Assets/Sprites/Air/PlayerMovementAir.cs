@@ -27,6 +27,7 @@ public class PlayerMovementAir : MonoBehaviour
     private bool isGrounded;
     private bool isInHitStun;
     private bool isBlocking;
+    private float groundedLogTimer;
 
     private InputAction moveAction;
     private InputAction jumpAction;
@@ -81,7 +82,8 @@ public class PlayerMovementAir : MonoBehaviour
             groundCheckRadius,
             groundLayer
         );
-        Debug.Log("isGrounded: " + isGrounded);
+        groundedLogTimer += Time.deltaTime;
+        if (groundedLogTimer >= 10f) { Debug.Log("isGrounded: " + isGrounded); groundedLogTimer = 0f; }
         animator.SetBool("IsGrounded", isGrounded);
 
         if (isInHitStun) return;

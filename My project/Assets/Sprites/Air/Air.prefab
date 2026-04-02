@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 980706809962335131}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.573, z: 0}
+  m_LocalPosition: {x: -0.16, y: -0.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -334,7 +334,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -534,7 +534,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FighterHealth
   maxHealth: 100
   currentHealth: 0
-  healthBar: {fileID: 0}
+  healthFill: {fileID: 0}
+  ghostFill: {fileID: 0}
+  nameLabel: {fileID: 0}
+  ghostDelay: 0.6
+  ghostSpeed: 0.25
 --- !u!1 &8112945907071764385
 GameObject:
   m_ObjectHideFlags: 0

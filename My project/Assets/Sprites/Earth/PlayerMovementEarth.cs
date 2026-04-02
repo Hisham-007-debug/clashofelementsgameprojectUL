@@ -112,12 +112,12 @@ public class PlayerMovementEarth : MonoBehaviour
         // Flip sprite while keeping original scale
         if (moveInput.x > 0)
             transform.localScale = new Vector3(
-                Mathf.Abs(originalScale.x),
+                -Mathf.Abs(originalScale.x),
                 originalScale.y,
                 originalScale.z);
         else if (moveInput.x < 0)
             transform.localScale = new Vector3(
-                -Mathf.Abs(originalScale.x),
+                Mathf.Abs(originalScale.x),
                 originalScale.y,
                 originalScale.z);
     }
@@ -182,10 +182,10 @@ public class PlayerMovementEarth : MonoBehaviour
     }
 
     // Called by Animation Events
-    public void EnableLightHitbox()  => lightAttackHitbox?.EnableHitbox();
-    public void DisableLightHitbox() => lightAttackHitbox?.DisableHitbox();
-    public void EnableHeavyHitbox()  => heavyAttackHitbox?.EnableHitbox();
-    public void DisableHeavyHitbox() => heavyAttackHitbox?.DisableHitbox();
+    public void EnableLightHitbox()  { Debug.Log("[Earth] EnableLightHitbox fired"); lightAttackHitbox?.EnableHitbox(); }
+    public void DisableLightHitbox() { lightAttackHitbox?.DisableHitbox(); }
+    public void EnableHeavyHitbox()  { Debug.Log("[Earth] EnableHeavyHitbox fired"); heavyAttackHitbox?.EnableHitbox(); }
+    public void DisableHeavyHitbox() { heavyAttackHitbox?.DisableHitbox(); }
 
     // Called by HitboxController when this fighter gets hit
     public void ApplyHitStun(float duration, float knockbackForce, Vector3 attackerPosition)

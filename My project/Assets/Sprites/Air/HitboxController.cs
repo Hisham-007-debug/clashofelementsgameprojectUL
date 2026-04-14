@@ -57,7 +57,7 @@ public class HitboxController : MonoBehaviour
         Debug.Log($"[Hitbox] health={health}, airController={airController}, earthController={earthController}");
 
         if (health != null)
-            health.TakeDamage(damage);
+            health.TakeDamage(damage, transform.root.position);
 
         if (airController != null)
             airController.ApplyHitStun(hitStunDuration, knockbackForce, transform.root.position);

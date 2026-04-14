@@ -16,7 +16,9 @@ public class FighterHealth : MonoBehaviour
     [Header("Ghost Bar")]
     public float ghostDelay  = 0.6f;   // seconds before ghost starts draining
     public float ghostSpeed  = 0.25f;  // fraction per second
-
+    
+    [Header("Blood Effects")]
+    public BloodParticleManager bloodManager;
     public bool IsDead { get; private set; }
 
     private float ghostHealth;
@@ -70,13 +72,40 @@ public class FighterHealth : MonoBehaviour
         }
     }
 
+    public void TakeDamage(float amount, Vector3 attackerPosition)
+    {
+        if (IsDead) return;
+
+        currentHealth = Mathf.Max(0, currentHealth - amount);
+        timeSinceHit = 0f;
+
+        // --- BLOOD EFFECT ---
+        if (bloodManager != null)
+        {
+            Vector2 hitDir = (transform.position - attackerPosition).normalized;
+            bloodManager.SpawnBlood(currentHealth, maxHealth, hitDir, amount);
+        }
+
+        Refresh();
+
+        if (currentHealth <= 0)
+            OnKO();
+    }
+
+    // ORIGINAL: Keeps your old code working (sprays blood upward)
     public void TakeDamage(float amount)
     {
         if (IsDead) return;
 
         currentHealth = Mathf.Max(0, currentHealth - amount);
-        timeSinceHit  = 0f;
-        Debug.Log($"[Health] currentHealth={currentHealth}, healthFill={(healthFill == null ? "NULL" : healthFill.name)}");
+        timeSinceHit = 0f;
+
+        // --- BLOOD EFFECT ---
+        if (bloodManager != null)
+        {
+            bloodManager.SpawnBlood(currentHealth, maxHealth, amount);
+        }
+
         Refresh();
 
         if (currentHealth <= 0)
@@ -106,9 +135,17 @@ public class FighterHealth : MonoBehaviour
         IsDead = true;
         GetComponent<Animator>().SetTrigger("KO");
 
-        var air   = GetComponent<PlayerMovementAir>();
+        // --- DEATH BLOOD BURST ---
+        if (bloodManager != null)
+        {
+            bloodManager.SpawnBlood(0, maxHealth, Vector2.up, maxHealth);
+            bloodManager.SpawnBlood(0, maxHealth, Vector2.left, maxHealth);
+            bloodManager.SpawnBlood(0, maxHealth, Vector2.right, maxHealth);
+        }
+
+        var air = GetComponent<PlayerMovementAir>();
         var earth = GetComponent<PlayerMovementEarth>();
-        if (air   != null) air.enabled   = false;
+        if (air != null) air.enabled = false;
         if (earth != null) earth.enabled = false;
     }
 }

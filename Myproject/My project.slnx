@@ -1,5 +1,0 @@
-﻿<Solution>
-  <Project Path="Assembly-CSharp.csproj" />
-  <Project Path="com.IvanMurzak.Unity.MCP.Installer.Tests.csproj" />
-  <Project Path="com.IvanMurzak.Unity.MCP.Installer.csproj" />
-</Solution>

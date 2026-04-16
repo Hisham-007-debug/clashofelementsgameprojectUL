@@ -2068,9 +2068,9 @@ MonoBehaviour:
   arenaPreview: {fileID: 739276862}
   arenaName: {fileID: 2102335645}
   fireArena: {fileID: -3903418514567901084, guid: 1a987c87f99e5435082f56c632f0011d, type: 3}
-  iceArena: {fileID: -1747654194956157104, guid: 9ae5879db97184b53a8078f5e654f495, type: 3}
+  iceArena: {fileID: 5890621911652337728, guid: d13a83e48f8d727408e2fb2cc1eee9b1, type: 3}
   airArena: {fileID: -8681652566589229495, guid: 2cb714a7902e944af93b6b981dc951a4, type: 3}
-  earthArena: {fileID: 7928157329128082137, guid: 29274adbb4663482587557e483989374, type: 3}
+  earthArena: {fileID: -223404088004027379, guid: ab2cdfc955b5a465da49e626dc78fbb1, type: 3}
 --- !u!4 &1355788525
 Transform:
   m_ObjectHideFlags: 0

@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class ArenaSelectController : MonoBehaviour
 {
@@ -41,16 +40,5 @@ public class ArenaSelectController : MonoBehaviour
         arenaPreview.sprite = earthArena;
         arenaName.text = "EARTH ARENA";
         selectedArena = "Earth";
-    }
-
-    public void StartFight()
-    {
-        if (selectedArena == "") return;
-        SceneManager.LoadScene("FightScene");
-    }
-
-    public void GoBack()
-    {
-        SceneManager.LoadScene("CharacterSelect");
     }
 }

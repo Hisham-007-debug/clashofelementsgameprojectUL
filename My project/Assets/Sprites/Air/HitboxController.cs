@@ -4,7 +4,7 @@ public class HitboxController : MonoBehaviour
 {
     [Header("Attack Data")]
     public float damage = 10f;
-    public float knockbackForce = 5f;
+    public float knockbackForce = 2.5f;
     public float hitStunDuration = 0.3f;
 
     private Collider2D col;
@@ -57,7 +57,7 @@ public class HitboxController : MonoBehaviour
         Debug.Log($"[Hitbox] health={health}, airController={airController}, earthController={earthController}");
 
         if (health != null)
-            health.TakeDamage(damage);
+            health.TakeDamage(damage, transform.root.position);
 
         if (airController != null)
             airController.ApplyHitStun(hitStunDuration, knockbackForce, transform.root.position);

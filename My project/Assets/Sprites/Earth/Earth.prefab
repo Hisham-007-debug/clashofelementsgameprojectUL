@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 5641285794152868473}
   - component: {fileID: 1111111111111111111}
   - component: {fileID: 2222222222222222222}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Earth
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0a10e8f90ba94261b19512ff9338b877, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -379,7 +379,7 @@ MonoBehaviour:
     m_ActionId: 7cd1fe38-39c5-45fa-8506-ac6116232a5c
     m_ActionName: Figther/Block
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Figther
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

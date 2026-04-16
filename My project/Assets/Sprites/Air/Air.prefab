@@ -235,7 +235,8 @@ GameObject:
   - component: {fileID: 5123040733454684593}
   - component: {fileID: 3105373799356701693}
   - component: {fileID: -3392745072704976945}
-  m_Layer: 0
+  - component: {fileID: 6949888781719139898}
+  m_Layer: 7
   m_Name: Air
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -356,7 +357,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0a10e8f90ba94261b19512ff9338b877, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -515,8 +516,8 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 7cd1fe38-39c5-45fa-8506-ac6116232a5c
     m_ActionName: Figther/Block
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Figther
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -539,6 +540,29 @@ MonoBehaviour:
   nameLabel: {fileID: 0}
   ghostDelay: 0.6
   ghostSpeed: 0.25
+  bloodManager: {fileID: 6949888781719139898}
+--- !u!114 &6949888781719139898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7422052925661328703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5346a5ab4d92c04688402dd0f254cc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BloodParticleManager
+  bloodParticleSystem: {fileID: 0}
+  minParticles: 5
+  maxParticles: 50
+  minSpeed: 1
+  maxSpeed: 5
+  particleLifetime: 1
+  bloodColor: {r: 0.6, g: 0, b: 0, a: 1}
+  particleSize: 0.1
+  bloodSplatterPrefab: {fileID: 0}
+  splatterLifetime: 5
 --- !u!1 &8112945907071764385
 GameObject:
   m_ObjectHideFlags: 0

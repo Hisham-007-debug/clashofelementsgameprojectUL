@@ -2637,7 +2637,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1355788524}
         m_TargetAssemblyTypeName: ArenaSelectController, Assembly-CSharp
-        m_MethodName: StartFight
+        m_MethodName: SelectAirArena
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -26,9 +26,13 @@ public class PlayerMovementEarth : MonoBehaviour
     public HitboxController lightAttackHitbox;
     public HitboxController heavyAttackHitbox;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip punchSound;
+
     private Rigidbody2D rb;
     private Animator animator;
     private PlayerInput playerInput;
+    private AudioSource audioSource;
     private Vector3 originalScale;
 
     private Vector2 moveInput;
@@ -49,6 +53,11 @@ public class PlayerMovementEarth : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         originalScale = transform.localScale;
 
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+
         var actions = playerInput.actions;
         moveAction        = actions["Move"];
         jumpAction        = actions["Jump"];
@@ -61,6 +70,7 @@ public class PlayerMovementEarth : MonoBehaviour
         if (jumpAction != null)        jumpAction.performed        += OnJump;
         if (lightAttackAction != null) lightAttackAction.performed += OnLightAttack;
         if (heavyAttackAction != null) heavyAttackAction.performed += OnHeavyAttack;
+        if (lightAttackHitbox != null) lightAttackHitbox.onSuccessfulHit += PlayPunchSound;
     }
 
     void OnDisable()
@@ -68,6 +78,7 @@ public class PlayerMovementEarth : MonoBehaviour
         if (jumpAction != null)        jumpAction.performed        -= OnJump;
         if (lightAttackAction != null) lightAttackAction.performed -= OnLightAttack;
         if (heavyAttackAction != null) heavyAttackAction.performed -= OnHeavyAttack;
+        if (lightAttackHitbox != null) lightAttackHitbox.onSuccessfulHit -= PlayPunchSound;
 
     }
 
@@ -168,6 +179,12 @@ public class PlayerMovementEarth : MonoBehaviour
     {
         if (!isInHitStun)
             animator.SetTrigger("HeavyAttack");
+    }
+
+    private void PlayPunchSound()
+    {
+        if (punchSound != null)
+            audioSource.PlayOneShot(punchSound);
     }
 
     private void OnBlock(InputAction.CallbackContext ctx)

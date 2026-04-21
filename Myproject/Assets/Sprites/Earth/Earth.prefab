@@ -290,6 +290,7 @@ MonoBehaviour:
     m_Bits: 64
   lightAttackHitbox: {fileID: 6333780790305261929}
   heavyAttackHitbox: {fileID: 7575957445843827146}
+  punchSound: {fileID: 8300000, guid: e8ff54c53baa2664fbaba08ccdb90d29, type: 3}
 --- !u!114 &1111111111111111111
 MonoBehaviour:
   m_ObjectHideFlags: 0

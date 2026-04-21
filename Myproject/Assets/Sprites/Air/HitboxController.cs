@@ -7,6 +7,8 @@ public class HitboxController : MonoBehaviour
     public float knockbackForce = 1.0f;
     public float hitStunDuration = 0.3f;
 
+    public System.Action onSuccessfulHit;
+
     private Collider2D col;
     private GameObject owner; // the fighter this hitbox belongs to
     private bool hasHit;
@@ -70,5 +72,6 @@ public class HitboxController : MonoBehaviour
         // Disable after landing hit (prevents multi-hit on same swing)
         hasHit = true;
         DisableHitbox();
+        onSuccessfulHit?.Invoke();
     }
 }

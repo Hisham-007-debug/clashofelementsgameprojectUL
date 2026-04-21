@@ -14,13 +14,22 @@ public class PlayerMovementFire : MonoBehaviour
     public float groundCheckRadius = 0.1f;
     public LayerMask groundLayer;
 
+    [Header("Boundary")]
+    public float leftBound  = -8f;
+    public float rightBound =  8f;
+
     [Header("Hitbox References")]
     public HitboxController lightAttackHitbox;
     public HitboxController heavyAttackHitbox;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip punchSound;
+    [SerializeField] private AudioClip explosionSound;
+
     private Rigidbody2D rb;
     private Animator animator;
     private PlayerInput playerInput;
+    private AudioSource audioSource;
     private Vector3 originalScale;
 
     private Vector2 moveInput;
@@ -52,6 +61,11 @@ public class PlayerMovementFire : MonoBehaviour
         if (groundCheck == null)
             Debug.LogWarning($"[PlayerMovementFire] 'groundCheck' is not assigned on {gameObject.name}. Jump will not work until it is set.");
 
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+
         var actions = playerInput.actions;
         moveAction        = actions["Move"];
         jumpAction        = actions["Jump"];
@@ -64,6 +78,8 @@ public class PlayerMovementFire : MonoBehaviour
         if (jumpAction != null)        jumpAction.performed        += OnJump;
         if (lightAttackAction != null) lightAttackAction.performed += OnLightAttack;
         if (heavyAttackAction != null) heavyAttackAction.performed += OnHeavyAttack;
+        if (lightAttackHitbox != null) lightAttackHitbox.onSuccessfulHit += PlayPunchSound;
+        if (heavyAttackHitbox != null) heavyAttackHitbox.onSuccessfulHit += PlayExplosionSound;
     }
 
     void OnDisable()
@@ -71,6 +87,8 @@ public class PlayerMovementFire : MonoBehaviour
         if (jumpAction != null)        jumpAction.performed        -= OnJump;
         if (lightAttackAction != null) lightAttackAction.performed -= OnLightAttack;
         if (heavyAttackAction != null) heavyAttackAction.performed -= OnHeavyAttack;
+        if (lightAttackHitbox != null) lightAttackHitbox.onSuccessfulHit -= PlayPunchSound;
+        if (heavyAttackHitbox != null) heavyAttackHitbox.onSuccessfulHit -= PlayExplosionSound;
     }
 
     void Update()
@@ -116,6 +134,10 @@ public class PlayerMovementFire : MonoBehaviour
     {
         if (isInHitStun) return;
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
+
+        Vector3 pos = transform.position;
+        pos.x = Mathf.Clamp(pos.x, leftBound, rightBound);
+        transform.position = pos;
     }
 
     private void OnJump(InputAction.CallbackContext ctx)
@@ -137,6 +159,18 @@ public class PlayerMovementFire : MonoBehaviour
     {
         if (!isInHitStun)
             animator.SetTrigger("HeavyAttack");
+    }
+
+    private void PlayPunchSound()
+    {
+        if (punchSound != null)
+            audioSource.PlayOneShot(punchSound);
+    }
+
+    private void PlayExplosionSound()
+    {
+        if (explosionSound != null)
+            audioSource.PlayOneShot(explosionSound);
     }
 
     private void OnBlock(InputAction.CallbackContext ctx)

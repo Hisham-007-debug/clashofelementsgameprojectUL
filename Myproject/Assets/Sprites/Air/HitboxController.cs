@@ -36,16 +36,21 @@ public class HitboxController : MonoBehaviour
         hasHit = false;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other) => ProcessHit(other);
+
+    // OnTriggerStay2D handles the case where the opponent is already overlapping
+    // when the hitbox is re-enabled (e.g. chained attacks), since Unity won't
+    // re-fire OnTriggerEnter2D in that scenario.
+    void OnTriggerStay2D(Collider2D other) => ProcessHit(other);
+
+    private void ProcessHit(Collider2D other)
     {
         if (hasHit) return;
-        Debug.Log($"[Hitbox] OnTriggerEnter2D hit: {other.gameObject.name}, tag: {other.tag}, owner: {owner.name}");
+        Debug.Log($"[Hitbox] ProcessHit: {other.gameObject.name}, tag: {other.tag}, owner: {owner.name}");
 
-        // Don't hit yourself
         if (other.gameObject == owner) return;
         if (other.transform.root.gameObject == owner) return;
 
-        // Only hit fighters tagged "Player"
         if (!other.CompareTag("Player"))
         {
             Debug.Log($"[Hitbox] Ignored {other.gameObject.name} - not tagged Player");

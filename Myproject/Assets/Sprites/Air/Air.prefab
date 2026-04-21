@@ -427,6 +427,8 @@ MonoBehaviour:
     m_Bits: 64
   lightAttackHitbox: {fileID: 7589447481513035137}
   heavyAttackHitbox: {fileID: 8511307640544030689}
+  punchSound: {fileID: 8300000, guid: 3c0e550393cb79240a52d82d0b48df2e, type: 3}
+  heavyAttackSound: {fileID: 8300000, guid: 16a404c64c7a4ad4eae8794c4a0a2d9f, type: 3}
 --- !u!114 &3105373799356701693
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -311,8 +311,12 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  leftBound: -8
+  rightBound: 8
   lightAttackHitbox: {fileID: 7601319260711880570}
   heavyAttackHitbox: {fileID: 6443388164923501599}
+  punchSound: {fileID: 8300000, guid: e8ff54c53baa2664fbaba08ccdb90d29, type: 3}
+  explosionSound: {fileID: 8300000, guid: 56f3d0b710e574446a75b59ef5e8cc03, type: 3}
 --- !u!114 &1323795488693279855
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2226,12 +2226,14 @@ MonoBehaviour:
   earthPrefab: {fileID: 378614350974100351, guid: 0e395b6f257c6924bb2adeef61082faa, type: 3}
   p1SpawnPoint: {fileID: 51320384}
   p2SpawnPoint: {fileID: 1654117346}
-  p1HealthFill: {fileID: 0}
-  p1GhostFill: {fileID: 0}
-  p1NameLabel: {fileID: 0}
-  p2HealthFill: {fileID: 0}
-  p2GhostFill: {fileID: 0}
-  p2NameLabel: {fileID: 0}
+  p1HealthFill: {fileID: 252859176}
+  p1GhostFill: {fileID: 630834315}
+  p1NameLabel: {fileID: 535438029}
+  p2HealthFill: {fileID: 1662681680}
+  p2GhostFill: {fileID: 1379990347}
+  p2NameLabel: {fileID: 1838995003}
+  pixelFont: {fileID: 0}
+  gameStartAudio: {fileID: 8300000, guid: bc6b1cc5e57216d41b1e406da986a794, type: 3}
 --- !u!1 &1379990345
 GameObject:
   m_ObjectHideFlags: 0

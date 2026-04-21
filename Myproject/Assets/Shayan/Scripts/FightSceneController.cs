@@ -39,6 +39,10 @@ public class FightSceneController : MonoBehaviour
     [Tooltip("Optional pixel font. Falls back to PressStart2P from Resources if null.")]
     public Font pixelFont;
 
+    [Header("Audio")]
+    public AudioClip gameStartAudio;
+    private AudioSource _audioSource;
+
     // ── Runtime State ─────────────────────────────────────────────────────────
     private GameObject p1GO;
     private GameObject p2GO;
@@ -65,6 +69,50 @@ public class FightSceneController : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        _audioSource = gameObject.AddComponent<AudioSource>();
+        _audioSource.playOnAwake = false;
+        AutoResolveReferences();
+    }
+
+    // Fills any null inspector fields by searching the scene hierarchy by name.
+    // This ensures the scene works on a fresh clone even if Unity drops serialized references.
+    private void AutoResolveReferences()
+    {
+        if (fightBackground == null)
+            fightBackground = GameObject.Find("FightBackground")?.GetComponent<SpriteRenderer>();
+
+        if (p1SpawnPoint == null)
+            p1SpawnPoint = GameObject.Find("P1SpawnPoint")?.transform;
+
+        if (p2SpawnPoint == null)
+            p2SpawnPoint = GameObject.Find("P2SpawnPoint")?.transform;
+
+        if (p1HealthFill == null)
+            p1HealthFill = GameObject.Find("P1_Fill")?.GetComponent<Image>();
+
+        if (p1GhostFill == null)
+            p1GhostFill = GameObject.Find("P1_Ghost")?.GetComponent<Image>();
+
+        if (p1NameLabel == null)
+            p1NameLabel = GameObject.Find("P1_Label")?.GetComponent<Text>();
+
+        if (p2HealthFill == null)
+            p2HealthFill = GameObject.Find("P2_Fill")?.GetComponent<Image>();
+
+        if (p2GhostFill == null)
+            p2GhostFill = GameObject.Find("P2_Ghost")?.GetComponent<Image>();
+
+        if (p2NameLabel == null)
+            p2NameLabel = GameObject.Find("P2_Label")?.GetComponent<Text>();
+
+        if (firePrefab == null)
+            firePrefab = Resources.Load<GameObject>("Prefabs/Fire");
+
+        if (airPrefab == null)
+            airPrefab = Resources.Load<GameObject>("Prefabs/Air");
+
+        if (earthPrefab == null)
+            earthPrefab = Resources.Load<GameObject>("Prefabs/Earth");
     }
 
     private void Start()
@@ -138,11 +186,13 @@ public class FightSceneController : MonoBehaviour
         p1GO = SpawnCharacter(CharacterSelectionData.P1Index, p1SpawnPoint, false);
         p2GO = SpawnCharacter(CharacterSelectionData.P2Index, p2SpawnPoint, true);
 
-        // P1 uses gamepad (set in prefab), P2 always uses keyboard
         AssignToKeyboard(p2GO);
 
         WireHealthBar(p1GO, p1HealthFill, p1GhostFill, p1NameLabel, "P1_Fill", "P1_Ghost", "P1_Label");
         WireHealthBar(p2GO, p2HealthFill, p2GhostFill, p2NameLabel, "P2_Fill", "P2_Ghost", "P2_Label");
+
+        if (gameStartAudio != null)
+            _audioSource.PlayOneShot(gameStartAudio);
     }
 
     // Show round-win message for 5 s then reset

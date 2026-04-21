@@ -67,6 +67,11 @@ public class ArenaSelectController : MonoBehaviour
         if (arenaName != null) arenaName.text = "EARTH";
     }
 
+    public void GoBack()
+    {
+        SceneManager.LoadScene("CharacterSelect");
+    }
+
     public void StartFight()
     {
         if (selectedArenaIndex == -1)

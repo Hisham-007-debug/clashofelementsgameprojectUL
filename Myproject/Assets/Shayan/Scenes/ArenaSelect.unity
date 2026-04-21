@@ -2767,7 +2767,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1355788526}
         m_TargetAssemblyTypeName: ArenaSelectController, Assembly-CSharp
         m_MethodName: GoBack
         m_Mode: 1

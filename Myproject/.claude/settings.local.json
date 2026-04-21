@@ -11,7 +11,8 @@
       "Bash(find 'C:\\\\Users\\\\Aaron\\\\Pictures\\\\clashofelementsgameprojectUL\\\\My project\\\\Assets' -iname *air* -type f)",
       "Bash(grep -r \"PlayerMovementAir\\\\|Air\\\\.prefab\\\\|Air\\\\.controller\" 'C:\\\\Users\\\\Aaron\\\\Pictures\\\\clashofelementsgameprojectUL\\\\My project\\\\Assets' --include=*.cs -l)",
       "Bash(tasklist)",
-      "Bash(cmd.exe /c \"dir \\\\\"C:\\\\Users\\\\Aaron\\\\Pictures\\\\clashofelementsgameprojectUL\\\\My project\\\\screenshot_healthbar.png\\\\\"\" 2>&1)"
+      "Bash(cmd.exe /c \"dir \\\\\"C:\\\\Users\\\\Aaron\\\\Pictures\\\\clashofelementsgameprojectUL\\\\My project\\\\screenshot_healthbar.png\\\\\"\" 2>&1)",
+      "Bash(python3 *)"
     ]
   },
   "enableAllProjectMcpServers": true,

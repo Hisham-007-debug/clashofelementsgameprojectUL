@@ -22,25 +22,25 @@ public class CharacterSelectController : MonoBehaviour
 
     public void SelectFire()
     {
-        SelectCharacter("FIRE", fireFull);
+        SelectCharacter("FIRE", fireFull, 0);
     }
 
     public void SelectIce()
     {
-        SelectCharacter("ICE", iceFull);
+        SelectCharacter("ICE", iceFull, 1);
     }
 
     public void SelectAir()
     {
-        SelectCharacter("AIR", airFull);
+        SelectCharacter("AIR", airFull, 2);
     }
 
     public void SelectEarth()
     {
-        SelectCharacter("EARTH", earthFull);
+        SelectCharacter("EARTH", earthFull, 3);
     }
 
-    private void SelectCharacter(string characterName, Sprite characterSprite)
+    private void SelectCharacter(string characterName, Sprite characterSprite, int index)
     {
         if (characterSprite == null)
         {
@@ -58,6 +58,7 @@ public class CharacterSelectController : MonoBehaviour
 
             p1Preview.sprite = characterSprite;
             p1NameText.text = characterName;
+            CharacterSelectionData.P1Index = index;
             Debug.Log("Selected for P1: " + characterName);
         }
         else
@@ -70,6 +71,7 @@ public class CharacterSelectController : MonoBehaviour
 
             p2Preview.sprite = characterSprite;
             p2NameText.text = characterName;
+            CharacterSelectionData.P2Index = index;
             Debug.Log("Selected for P2: " + characterName);
         }
     }

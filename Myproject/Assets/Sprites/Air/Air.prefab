@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitboxController
   damage: 10
-  knockbackForce: 5
+  knockbackForce: 1
   hitStunDuration: 0.3
 --- !u!1 &5448523378461931651
 GameObject:
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   damage: 10
-  knockbackForce: 5
+  knockbackForce: 1
   hitStunDuration: 0.3
 --- !u!1 &7422052925661328703
 GameObject:
@@ -253,8 +253,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.55, y: -3.16, z: 0}
-  m_LocalScale: {x: 3.1215, y: 2.9127383, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.38, y: 2.220829, z: 0.762454}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5983538454475967563}
   - {fileID: 7616593274119170429}
@@ -554,13 +554,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BloodParticleManager
   bloodParticleSystem: {fileID: 0}
-  minParticles: 5
-  maxParticles: 50
-  minSpeed: 1
-  maxSpeed: 5
-  particleLifetime: 1
+  minParticles: 8
+  maxParticles: 80
+  minSpeed: 5
+  maxSpeed: 18
+  particleLifetime: 1.4
   bloodColor: {r: 0.6, g: 0, b: 0, a: 1}
-  particleSize: 0.1
+  particleSize: 0.4
   bloodSplatterPrefab: {fileID: 0}
   splatterLifetime: 5
 --- !u!1 &8112945907071764385

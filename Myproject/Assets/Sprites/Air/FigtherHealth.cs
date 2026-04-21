@@ -40,24 +40,44 @@ public class FighterHealth : MonoBehaviour
         }
     };
 
-    void Start()
+    void Awake()
     {
+        // Initialise health values immediately so they are ready even when
+        // the UI references are wired externally (e.g. by FightSceneController)
+        // before Start() runs on this object.
         currentHealth = maxHealth;
         ghostHealth   = maxHealth;
         timeSinceHit  = ghostDelay;
+    }
 
+    void Start()
+    {
+        SetupImages();
+        Refresh();
+        UpdateGhost();
+    }
+
+    // Called by FightSceneController after it assigns healthFill / ghostFill
+    // at runtime so the bar shows correctly from the first frame.
+    public void ForceRefresh()
+    {
+        SetupImages();
+        Refresh();
+        UpdateGhost();
+    }
+
+    private void SetupImages()
+    {
         if (healthFill != null)
         {
-            healthFill.type       = UnityEngine.UI.Image.Type.Filled;
-            healthFill.fillMethod = UnityEngine.UI.Image.FillMethod.Horizontal;
+            healthFill.type       = Image.Type.Filled;
+            healthFill.fillMethod = Image.FillMethod.Horizontal;
         }
         if (ghostFill != null)
         {
-            ghostFill.type       = UnityEngine.UI.Image.Type.Filled;
-            ghostFill.fillMethod = UnityEngine.UI.Image.FillMethod.Horizontal;
+            ghostFill.type       = Image.Type.Filled;
+            ghostFill.fillMethod = Image.FillMethod.Horizontal;
         }
-
-        Refresh();
     }
 
     void Update()
@@ -145,7 +165,11 @@ public class FighterHealth : MonoBehaviour
 
         var air = GetComponent<PlayerMovementAir>();
         var earth = GetComponent<PlayerMovementEarth>();
-        if (air != null) air.enabled = false;
+        var fire = GetComponent<PlayerMovementFire>();
+        if (air   != null) air.enabled   = false;
         if (earth != null) earth.enabled = false;
+        if (fire  != null) fire.enabled  = false;
+
+        FightSceneController.Instance?.OnFighterKO(gameObject);
     }
 }

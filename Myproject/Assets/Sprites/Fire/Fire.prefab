@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 7591128215376699317}
   m_Layer: 0
   m_Name: Hurtbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,7 +95,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 8264085359782256396}
   m_Layer: 0
   m_Name: Fire
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -311,8 +311,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  lightAttackHitbox: {fileID: 0}
-  heavyAttackHitbox: {fileID: 0}
+  lightAttackHitbox: {fileID: 7601319260711880570}
+  heavyAttackHitbox: {fileID: 6443388164923501599}
 --- !u!114 &1323795488693279855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,13 +326,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BloodParticleManager
   bloodParticleSystem: {fileID: 0}
-  minParticles: 5
-  maxParticles: 50
-  minSpeed: 1
-  maxSpeed: 5
-  particleLifetime: 1
+  minParticles: 8
+  maxParticles: 80
+  minSpeed: 5
+  maxSpeed: 18
+  particleLifetime: 1.4
   bloodColor: {r: 0.6, g: 0, b: 0, a: 1}
-  particleSize: 0.1
+  particleSize: 0.4
   bloodSplatterPrefab: {fileID: 0}
   splatterLifetime: 5
 --- !u!114 &4575458692750675237
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
   m_Actions: {fileID: -944628639613478452, guid: c31b4efec56a8184fb56fde9fd96ff21, type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -360,8 +360,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Figther
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -384,7 +384,7 @@ MonoBehaviour:
   nameLabel: {fileID: 0}
   ghostDelay: 0.6
   ghostSpeed: 0.25
-  bloodManager: {fileID: 0}
+  bloodManager: {fileID: 1323795488693279855}
 --- !u!70 &8264085359782256396
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -419,8 +419,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0075882375, y: -0.2120884}
-  m_Size: {x: 0.23376441, y: 0.31217647}
+  m_Offset: {x: -0.0075882375, y: -0.17288238}
+  m_Size: {x: 0.23376441, y: 0.23376441}
   m_Direction: 0
 --- !u!1 &6871668569616058266
 GameObject:
@@ -449,8 +449,8 @@ Transform:
   m_GameObject: {fileID: 6871668569616058266}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.402, y: 0, z: 0}
+  m_LocalScale: {x: 1.41, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6415953518552130456}
@@ -468,7 +468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitboxController
   damage: 10
-  knockbackForce: 2.5
+  knockbackForce: 1
   hitStunDuration: 0.3
 --- !u!61 &1510775798096217459
 BoxCollider2D:
@@ -543,8 +543,8 @@ Transform:
   m_GameObject: {fileID: 9172360183626540729}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.299, y: 0, z: 0}
+  m_LocalScale: {x: 1.55, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6415953518552130456}
@@ -562,7 +562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitboxController
   damage: 10
-  knockbackForce: 2.5
+  knockbackForce: 1
   hitStunDuration: 0.3
 --- !u!61 &1859400787181528678
 BoxCollider2D:

@@ -6,11 +6,11 @@ public class BloodParticleManager : MonoBehaviour
     [SerializeField] private ParticleSystem bloodParticleSystem;
 
     [Header("Blood Particle Settings")]
-    [SerializeField] private int minParticles = 5;
-    [SerializeField] private int maxParticles = 50;
-    [SerializeField] private float minSpeed = 1f;
-    [SerializeField] private float maxSpeed = 5f;
-    [SerializeField] private float particleLifetime = 1f;
+    [SerializeField] private int minParticles = 8;
+    [SerializeField] private int maxParticles = 80;
+    [SerializeField] private float minSpeed = 5f;
+    [SerializeField] private float maxSpeed = 18f;
+    [SerializeField] private float particleLifetime = 1.4f;
     [SerializeField] private Color bloodColor = new Color(0.6f, 0f, 0f, 1f);
     [SerializeField] private float particleSize = 0.1f;
 
@@ -39,15 +39,15 @@ public class BloodParticleManager : MonoBehaviour
         main.startSize = particleSize;
         main.startColor = bloodColor;
         main.simulationSpace = ParticleSystemSimulationSpace.World;
-        main.gravityModifier = 1f;
+        main.gravityModifier = 0.25f;
 
         var emission = bloodParticleSystem.emission;
         emission.rateOverTime = 0;
 
         var shape = bloodParticleSystem.shape;
         shape.shapeType = ParticleSystemShapeType.Cone;
-        shape.angle = 45f;
-        shape.radius = 0.1f;
+        shape.angle = 90f;
+        shape.radius = 0.15f;
 
         var colorOverLifetime = bloodParticleSystem.colorOverLifetime;
         colorOverLifetime.enabled = true;
@@ -105,7 +105,7 @@ public class BloodParticleManager : MonoBehaviour
         var shape = bloodParticleSystem.shape;
         float angle = Mathf.Atan2(hitDirection.y, hitDirection.x) * Mathf.Rad2Deg;
         shape.rotation = new Vector3(0, 0, angle);
-        shape.angle = Mathf.Lerp(25f, 90f, intensity);
+        shape.angle = Mathf.Lerp(80f, 150f, intensity);
 
         // Apply speed and size
         var main = bloodParticleSystem.main;

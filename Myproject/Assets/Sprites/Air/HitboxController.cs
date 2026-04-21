@@ -4,7 +4,7 @@ public class HitboxController : MonoBehaviour
 {
     [Header("Attack Data")]
     public float damage = 10f;
-    public float knockbackForce = 2.5f;
+    public float knockbackForce = 1.0f;
     public float hitStunDuration = 0.3f;
 
     private Collider2D col;
@@ -51,10 +51,11 @@ public class HitboxController : MonoBehaviour
         }
 
         FighterHealth health = other.transform.root.GetComponent<FighterHealth>();
-        PlayerMovementAir airController = other.transform.root.GetComponent<PlayerMovementAir>();
+        PlayerMovementAir   airController   = other.transform.root.GetComponent<PlayerMovementAir>();
         PlayerMovementEarth earthController = other.transform.root.GetComponent<PlayerMovementEarth>();
+        PlayerMovementFire  fireController  = other.transform.root.GetComponent<PlayerMovementFire>();
 
-        Debug.Log($"[Hitbox] health={health}, airController={airController}, earthController={earthController}");
+        Debug.Log($"[Hitbox] health={health}, airController={airController}, earthController={earthController}, fireController={fireController}");
 
         if (health != null)
             health.TakeDamage(damage, transform.root.position);
@@ -63,6 +64,8 @@ public class HitboxController : MonoBehaviour
             airController.ApplyHitStun(hitStunDuration, knockbackForce, transform.root.position);
         else if (earthController != null)
             earthController.ApplyHitStun(hitStunDuration, knockbackForce, transform.root.position);
+        else if (fireController != null)
+            fireController.ApplyHitStun(hitStunDuration, knockbackForce, transform.root.position);
 
         // Disable after landing hit (prevents multi-hit on same swing)
         hasHit = true;

@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 5641285794152868473}
   - component: {fileID: 1111111111111111111}
   - component: {fileID: 2222222222222222222}
+  - component: {fileID: 790285439078842901}
   m_Layer: 7
   m_Name: Earth
   m_TagString: Player
@@ -212,8 +213,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0048896614, y: -0.21740292}
-  m_Size: {x: 0.49022084, y: 0.08601134}
+  m_Offset: {x: 0.0048896708, y: -0.14223862}
+  m_Size: {x: 0.49022102, y: 0.10284874}
   m_Direction: 1
 --- !u!95 &1797318237264236445
 Animator:
@@ -378,8 +379,8 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 7cd1fe38-39c5-45fa-8506-ac6116232a5c
     m_ActionName: Figther/Block
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Keyboard&Mouse
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Figther
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -397,7 +398,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FighterHealth
   maxHealth: 100
   currentHealth: 0
-  healthBar: {fileID: 0}
+  healthFill: {fileID: 0}
+  ghostFill: {fileID: 0}
+  nameLabel: {fileID: 0}
+  ghostDelay: 0.6
+  ghostSpeed: 0.25
+  bloodManager: {fileID: 790285439078842901}
+--- !u!114 &790285439078842901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378614350974100351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5346a5ab4d92c04688402dd0f254cc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BloodParticleManager
+  bloodParticleSystem: {fileID: 0}
+  minParticles: 8
+  maxParticles: 80
+  minSpeed: 5
+  maxSpeed: 18
+  particleLifetime: 1.4
+  bloodColor: {r: 0.6, g: 0, b: 0, a: 1}
+  particleSize: 0.4
+  bloodSplatterPrefab: {fileID: 0}
+  splatterLifetime: 5
 --- !u!1 &2749893636380328958
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,8 +484,8 @@ Transform:
   m_GameObject: {fileID: 3658672348284918847}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.3463, y: 0, z: 0}
+  m_LocalScale: {x: 2.61, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3968465976398722342}
@@ -521,7 +549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitboxController
   damage: 10
-  knockbackForce: 5
+  knockbackForce: 1
   hitStunDuration: 0.3
 --- !u!1 &7026889494251040759
 GameObject:
@@ -550,9 +578,9 @@ Transform:
   m_GameObject: {fileID: 7026889494251040759}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0.3601, y: -0.0625, z: 0}
+  m_LocalScale: {x: 3.35, y: 1.7631578, z: 1.7631578}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3968465976398722342}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -615,7 +643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitboxController
   damage: 10
-  knockbackForce: 5
+  knockbackForce: 1
   hitStunDuration: 0.3
 --- !u!1 &7784608790289966018
 GameObject:

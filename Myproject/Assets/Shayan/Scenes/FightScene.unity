@@ -2212,15 +2212,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1252998859}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7cd8c9efb3de4ea6846effbdeab960d, type: 3}
+  m_Script: {fileID: 11500000, guid: 82a83a9e8aa104d6ea84e5f717bbe020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FightSceneController
   fightBackground: {fileID: 333008185}
   fireArena: {fileID: 21300000, guid: d9026ae36ae5344f0a242b3d86f6d669, type: 3}
-  iceArena: {fileID: -1926927088236310675, guid: 89e10d82349f4488e9784e906ec18738, type: 3}
+  iceArena: {fileID: 21300000, guid: db90a83c6cbfc364683c1a5ced1e4446, type: 3}
   airArena: {fileID: 21300000, guid: 93a5c2c0bce484cbd9e65331e1d7192a, type: 3}
   earthArena: {fileID: -223404088004027379, guid: ab2cdfc955b5a465da49e626dc78fbb1, type: 3}
-  firePrefab: {fileID: -2253911629886400664, guid: c46a7f19e81a1f0469dc6871f28cc35c, type: 3}
+  firePrefab: {fileID: 4048674764181241039, guid: 2cfba4636121a544a9c07e8c9e3bbd1d, type: 3}
   icePrefab: {fileID: 0}
   airPrefab: {fileID: 1312811166}
   earthPrefab: {fileID: 2123144750}

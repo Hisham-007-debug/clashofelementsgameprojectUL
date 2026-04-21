@@ -2057,9 +2057,6 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 342440904}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
---- !u!1001 &689926237
-=======
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -2144,7 +2141,6 @@ RectTransform:
   m_SizeDelta: {x: 400, y: 40}
   m_Pivot: {x: 1, y: 1}
 --- !u!1001 &1312811165
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2170,19 +2166,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1895159425512371271, guid: 44fff6746218c964c88bd29c5c6307b1, type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< Updated upstream
-      value: -4.78
-      objectReference: {fileID: 0}
-    - target: {fileID: 1895159425512371271, guid: 44fff6746218c964c88bd29c5c6307b1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.73
-=======
       value: 1.06
       objectReference: {fileID: 0}
     - target: {fileID: 1895159425512371271, guid: 44fff6746218c964c88bd29c5c6307b1, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.05
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 1895159425512371271, guid: 44fff6746218c964c88bd29c5c6307b1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2727,13 +2715,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
-<<<<<<< Updated upstream
-  - {fileID: 652371195}
-  - {fileID: 689926237}
-=======
   - {fileID: 1312811165}
   - {fileID: 524066441}
   - {fileID: 2108766408}
   - {fileID: 491201516}
   - {fileID: 25217660}
->>>>>>> Stashed changes

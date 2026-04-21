@@ -1,9 +1,8 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class FightSceneBackgroundController : MonoBehaviour
 {
-    public Image backgroundImage;
+    public SpriteRenderer backgroundRenderer;
 
     public Sprite fireArenaBackground;
     public Sprite iceArenaBackground;
@@ -12,22 +11,28 @@ public class FightSceneBackgroundController : MonoBehaviour
 
     void Start()
     {
-        switch (ArenaSelectController.selectedArena)
+        int selectedArenaIndex = PlayerPrefs.GetInt("SelectedArenaIndex", -1);
+
+        switch (selectedArenaIndex)
         {
-            case "Fire":
-                backgroundImage.sprite = fireArenaBackground;
+            case 0:
+                backgroundRenderer.sprite = fireArenaBackground;
                 break;
 
-            case "Ice":
-                backgroundImage.sprite = iceArenaBackground;
+            case 1:
+                backgroundRenderer.sprite = iceArenaBackground;
                 break;
 
-            case "Air":
-                backgroundImage.sprite = airArenaBackground;
+            case 2:
+                backgroundRenderer.sprite = airArenaBackground;
                 break;
 
-            case "Earth":
-                backgroundImage.sprite = earthArenaBackground;
+            case 3:
+                backgroundRenderer.sprite = earthArenaBackground;
+                break;
+
+            default:
+                Debug.LogError("No valid arena selected.");
                 break;
         }
     }

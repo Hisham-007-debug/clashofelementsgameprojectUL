@@ -19,7 +19,6 @@ public class ArenaSelectController : MonoBehaviour
     private void Start()
     {
         selectedArenaIndex = -1;
-        PlayerPrefs.DeleteKey("SelectedArenaIndex");
 
         if (arenaPreview != null)
             arenaPreview.sprite = defaultPreview;
@@ -36,8 +35,6 @@ public class ArenaSelectController : MonoBehaviour
 
         if (arenaPreview != null) arenaPreview.sprite = fireArena;
         if (arenaName != null) arenaName.text = "FIRE";
-
-        Debug.Log("Selected Fire arena");
     }
 
     public void SelectIceArena()
@@ -48,8 +45,6 @@ public class ArenaSelectController : MonoBehaviour
 
         if (arenaPreview != null) arenaPreview.sprite = iceArena;
         if (arenaName != null) arenaName.text = "ICE";
-
-        Debug.Log("Selected Ice arena");
     }
 
     public void SelectAirArena()
@@ -60,8 +55,6 @@ public class ArenaSelectController : MonoBehaviour
 
         if (arenaPreview != null) arenaPreview.sprite = airArena;
         if (arenaName != null) arenaName.text = "AIR";
-
-        Debug.Log("Selected Air arena");
     }
 
     public void SelectEarthArena()
@@ -72,8 +65,6 @@ public class ArenaSelectController : MonoBehaviour
 
         if (arenaPreview != null) arenaPreview.sprite = earthArena;
         if (arenaName != null) arenaName.text = "EARTH";
-
-        Debug.Log("Selected Earth arena");
     }
 
     public void StartFight()
@@ -87,7 +78,6 @@ public class ArenaSelectController : MonoBehaviour
         PlayerPrefs.SetInt("SelectedArenaIndex", selectedArenaIndex);
         PlayerPrefs.Save();
 
-        Debug.Log("Loading FightScene with arena index: " + selectedArenaIndex);
         SceneManager.LoadScene("FightScene");
     }
 }

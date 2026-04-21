@@ -55,6 +55,11 @@ public class FightSceneController : MonoBehaviour
     private Sprite _hollowCircle;
     private Sprite _filledCircle;
 
+    // Round timer
+    private const float RoundDuration = 60f;
+    private float _timeRemaining;
+    private Text  _timerText;
+
     // ── Lifecycle ─────────────────────────────────────────────────────────────
 
     private void Awake()
@@ -76,10 +81,21 @@ public class FightSceneController : MonoBehaviour
         _hollowCircle = CreateCircleSprite(16, false);
         _filledCircle = CreateCircleSprite(16, true);
         CreateRoundDotsUI();
+        CreateTimerUI();
         StartRound();
     }
 
     // ── Public API (called by FighterHealth.OnKO) ─────────────────────────────
+
+    private void Update()
+    {
+        if (roundLocked || matchOver || _timerText == null) return;
+
+        _timeRemaining = Mathf.Max(0f, _timeRemaining - Time.deltaTime);
+        UpdateTimerDisplay();
+        if (_timeRemaining <= 0f)
+            OnTimeUp();
+    }
 
     public void OnFighterKO(GameObject loser)
     {
@@ -100,11 +116,11 @@ public class FightSceneController : MonoBehaviour
         if (p1Wins >= 2 || p2Wins >= 2)
         {
             matchOver = true;
-            StartCoroutine(MatchEndCoroutine(winnerName));
+            StartCoroutine(MatchEndCoroutine(winnerName + "\nWINS!"));
         }
         else
         {
-            StartCoroutine(RoundEndCoroutine(winnerName));
+            StartCoroutine(RoundEndCoroutine(winnerName + " wins the round"));
         }
     }
 
@@ -112,7 +128,9 @@ public class FightSceneController : MonoBehaviour
 
     private void StartRound()
     {
-        roundLocked = false;
+        roundLocked    = false;
+        _timeRemaining = RoundDuration;
+        UpdateTimerDisplay();
 
         if (p1GO != null) Destroy(p1GO);
         if (p2GO != null) Destroy(p2GO);
@@ -128,20 +146,20 @@ public class FightSceneController : MonoBehaviour
     }
 
     // Show round-win message for 5 s then reset
-    private IEnumerator RoundEndCoroutine(string winnerName)
+    private IEnumerator RoundEndCoroutine(string message)
     {
         yield return new WaitForSeconds(2.5f);
-        GameObject overlay = BuildAnnouncementUI(winnerName + " wins the round", false);
+        GameObject overlay = BuildAnnouncementUI(message, false);
         yield return new WaitForSeconds(5f);
         Destroy(overlay);
         StartRound();
     }
 
     // Show final match-winner message for 5 s then return to character select
-    private IEnumerator MatchEndCoroutine(string winnerName)
+    private IEnumerator MatchEndCoroutine(string message)
     {
         yield return new WaitForSeconds(2.5f);
-        BuildAnnouncementUI(winnerName + "\nWINS!", true);
+        BuildAnnouncementUI(message, true);
         yield return new WaitForSeconds(5f);
         SceneManager.LoadScene("CharacterSelect");
     }
@@ -238,6 +256,93 @@ public class FightSceneController : MonoBehaviour
         int idx = wins - 1;
         if (idx >= 0 && idx < dots.Length && dots[idx] != null)
             dots[idx].sprite = _filledCircle;
+    }
+
+    // ── Time-up Draw ──────────────────────────────────────────────────────────
+
+    private void OnTimeUp()
+    {
+        if (roundLocked || matchOver) return;
+        roundLocked = true;
+
+        DisableMovement(p1GO);
+        DisableMovement(p2GO);
+
+        p1Wins++;
+        p2Wins++;
+        UpdateWinDot(0);
+        UpdateWinDot(1);
+
+        bool p1MatchWon  = p1Wins >= 2 && p2Wins < 2;
+        bool p2MatchWon  = p2Wins >= 2 && p1Wins < 2;
+        bool bothMaxWins = p1Wins >= 2 && p2Wins >= 2;
+
+        if (bothMaxWins)
+        {
+            matchOver = true;
+            StartCoroutine(MatchEndCoroutine("IT'S A\nDRAW!"));
+        }
+        else if (p1MatchWon)
+        {
+            matchOver = true;
+            StartCoroutine(MatchEndCoroutine("PLAYER 1\nWINS!"));
+        }
+        else if (p2MatchWon)
+        {
+            matchOver = true;
+            StartCoroutine(MatchEndCoroutine("PLAYER 2\nWINS!"));
+        }
+        else
+        {
+            StartCoroutine(RoundEndCoroutine("TIME'S UP!\nDRAW"));
+        }
+    }
+
+    // ── Timer UI ──────────────────────────────────────────────────────────────
+
+    private void CreateTimerUI()
+    {
+        Font font = LoadFont();
+
+        GameObject canvasGO = new GameObject("TimerCanvas");
+        Canvas c = canvasGO.AddComponent<Canvas>();
+        c.renderMode   = RenderMode.ScreenSpaceOverlay;
+        c.sortingOrder = 15;
+        CanvasScaler cs = canvasGO.AddComponent<CanvasScaler>();
+        cs.uiScaleMode         = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        cs.referenceResolution = new Vector2(1920, 1080);
+        canvasGO.AddComponent<GraphicRaycaster>();
+
+        GameObject textGO = new GameObject("TimerText");
+        textGO.transform.SetParent(canvasGO.transform, false);
+
+        RectTransform rt    = textGO.AddComponent<RectTransform>();
+        rt.anchorMin         = new Vector2(0.5f, 1f);
+        rt.anchorMax         = new Vector2(0.5f, 1f);
+        rt.pivot             = new Vector2(0.5f, 1f);
+        rt.anchoredPosition  = new Vector2(0f, -20f);
+        rt.sizeDelta         = new Vector2(200f, 90f);
+
+        _timerText               = textGO.AddComponent<Text>();
+        _timerText.font          = font;
+        _timerText.fontSize      = 64;
+        _timerText.alignment     = TextAnchor.UpperCenter;
+        _timerText.color         = Color.white;
+        _timerText.raycastTarget = false;
+
+        Outline outline        = textGO.AddComponent<Outline>();
+        outline.effectColor    = Color.black;
+        outline.effectDistance = new Vector2(3, -3);
+    }
+
+    private void UpdateTimerDisplay()
+    {
+        if (_timerText == null) return;
+        int seconds      = Mathf.CeilToInt(_timeRemaining);
+        _timerText.text  = seconds.ToString();
+        _timerText.color = seconds <= 10
+            ? new Color(1f, 0.25f, 0.25f)
+            : Color.white;
     }
 
     // ── Announcement UI ───────────────────────────────────────────────────────

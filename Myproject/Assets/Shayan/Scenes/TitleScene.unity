@@ -524,6 +524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1315642779}
   - component: {fileID: 1315642778}
+  - component: {fileID: 1315642780}
   m_Layer: 0
   m_Name: TitleSceneManager
   m_TagString: Untagged
@@ -558,6 +559,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1315642780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315642777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a69ad1619af69c46a5820cdeb186c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TitleInputIndicator
 --- !u!1 &1370712781
 GameObject:
   m_ObjectHideFlags: 0

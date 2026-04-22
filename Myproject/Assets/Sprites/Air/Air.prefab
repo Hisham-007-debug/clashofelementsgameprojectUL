@@ -381,8 +381,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0071406425, y: 0.10714383}
-  m_Size: {x: 0.45541105, y: 0.6870311}
+  m_Offset: {x: -0.007140636, y: -0.08766857}
+  m_Size: {x: 0.45541108, y: 1.076656}
   m_Direction: 0
 --- !u!95 &2810557192680157319
 Animator:
@@ -425,6 +425,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  leftBound: -8
+  rightBound: 8
   lightAttackHitbox: {fileID: 7589447481513035137}
   heavyAttackHitbox: {fileID: 8511307640544030689}
   punchSound: {fileID: 8300000, guid: 3c0e550393cb79240a52d82d0b48df2e, type: 3}
@@ -590,7 +592,7 @@ Transform:
   m_GameObject: {fileID: 8112945907071764385}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.498, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -664,7 +666,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.023415804, y: -0.005491495}
+  m_Offset: {x: -0.023415804, y: -0.356412}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -674,5 +676,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.55509233, y: 1.1940362}
+  m_Size: {x: 0.55509233, y: 1.5088328}
   m_EdgeRadius: 0

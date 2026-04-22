@@ -41,7 +41,13 @@ public class FightSceneController : MonoBehaviour
 
     [Header("Audio")]
     public AudioClip gameStartAudio;
+    public AudioClip fireArenaMusic;
+    public AudioClip iceArenaMusic;
+    public AudioClip airArenaMusic;
+    public AudioClip earthArenaMusic;
     private AudioSource _audioSource;
+    private AudioSource _musicSource;
+    private bool _arenaMusStarted;
 
     // ── Runtime State ─────────────────────────────────────────────────────────
     private GameObject p1GO;
@@ -71,6 +77,9 @@ public class FightSceneController : MonoBehaviour
         Instance = this;
         _audioSource = gameObject.AddComponent<AudioSource>();
         _audioSource.playOnAwake = false;
+        _musicSource = gameObject.AddComponent<AudioSource>();
+        _musicSource.playOnAwake = false;
+        _musicSource.loop = true;
         AutoResolveReferences();
     }
 
@@ -191,8 +200,43 @@ public class FightSceneController : MonoBehaviour
         WireHealthBar(p1GO, p1HealthFill, p1GhostFill, p1NameLabel, "P1_Fill", "P1_Ghost", "P1_Label");
         WireHealthBar(p2GO, p2HealthFill, p2GhostFill, p2NameLabel, "P2_Fill", "P2_Ghost", "P2_Label");
 
-        if (gameStartAudio != null)
-            _audioSource.PlayOneShot(gameStartAudio);
+        if (!_arenaMusStarted)
+        {
+            if (gameStartAudio != null)
+            {
+                _audioSource.PlayOneShot(gameStartAudio);
+                StartCoroutine(PlayArenaMusic(gameStartAudio.length));
+            }
+            else
+            {
+                StartCoroutine(PlayArenaMusic(0f));
+            }
+        }
+    }
+
+    private IEnumerator PlayArenaMusic(float delay)
+    {
+        if (delay > 0f) yield return new WaitForSeconds(delay);
+        AudioClip clip = GetArenaMusic();
+        if (clip != null)
+        {
+            _musicSource.clip = clip;
+            _musicSource.Play();
+            _arenaMusStarted = true;
+        }
+    }
+
+    private AudioClip GetArenaMusic()
+    {
+        int arenaIndex = PlayerPrefs.GetInt("SelectedArenaIndex", -1);
+        switch (arenaIndex)
+        {
+            case 0: return fireArenaMusic;
+            case 1: return iceArenaMusic;
+            case 2: return airArenaMusic;
+            case 3: return earthArenaMusic;
+            default: return null;
+        }
     }
 
     // Show round-win message for 5 s then reset
@@ -208,6 +252,7 @@ public class FightSceneController : MonoBehaviour
     // Show final match-winner message for 5 s then return to character select
     private IEnumerator MatchEndCoroutine(string message)
     {
+        _musicSource.Stop();
         yield return new WaitForSeconds(2.5f);
         BuildAnnouncementUI(message, true);
         yield return new WaitForSeconds(5f);

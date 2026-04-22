@@ -2234,6 +2234,10 @@ MonoBehaviour:
   p2NameLabel: {fileID: 1838995003}
   pixelFont: {fileID: 0}
   gameStartAudio: {fileID: 8300000, guid: bc6b1cc5e57216d41b1e406da986a794, type: 3}
+  fireArenaMusic: {fileID: 8300000, guid: 167cab1de1d73d14b9443d6eb68d6d5e, type: 3}
+  iceArenaMusic: {fileID: 8300000, guid: 002cc95195e90194ca8ea476da72105a, type: 3}
+  airArenaMusic: {fileID: 8300000, guid: dee2eef115cbee642be09e93f10edd7b, type: 3}
+  earthArenaMusic: {fileID: 8300000, guid: bf23c118ff1cc6243b68e39990a5ef91, type: 3}
 --- !u!1 &1379990345
 GameObject:
   m_ObjectHideFlags: 0
